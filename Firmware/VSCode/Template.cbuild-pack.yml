@@ -1,0 +1,5 @@
+cbuild-pack:
+  resolved-packs:
+    - resolved-pack: Nuvoton::NuMicroM23_DFP@1.0.6
+      selected-by-pack:
+        - Nuvoton::NuMicroM23_DFP

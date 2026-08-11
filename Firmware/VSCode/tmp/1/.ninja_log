@@ -1,0 +1,16 @@
+# ninja log v7
+20	103	8081882450961493	C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/out/Template/ARMCLANG/Release/compile_commands.json	a573a3dec80dcbcb
+13	97	8081746324794940	C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/out/Template/ARMCLANG/Release/compile_macros.h	9e98c8527260f1b0
+5	332	8081872924361954	CMakeFiles/Group_CMSIS.dir/C_/Users/rsarg/Downloads/M251BSP/Library/Device/Nuvoton/M251/Source/system_M251.o	a0995dd4d87019f8
+15	338	8081872924460542	CMakeFiles/Group_CMSIS.dir/C_/Users/rsarg/Downloads/M251BSP/Library/Device/Nuvoton/M251/Source/ARM/startup_M251.o	bf86667d34fd2ead
+24	357	8081872924561198	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/Library/StdDriver/src/retarget.o	36702bcb9f527e82
+47	358	8081872924769722	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/Library/StdDriver/src/sys.o	d1c07d211d9fb149
+36	391	8081872924676613	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/Library/StdDriver/src/uart.o	da485f0d11541bf5
+58	486	8081872924862205	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/Library/StdDriver/src/clk.o	fbeacedb6771e4df
+38	2792	8081888148727450	build.ninja	707a693a2484853d
+11	458	8081884209781933	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/Library/StdDriver/src/gpio.o	4f4b825c8863d24c
+21	179	8081886301439748	CMakeFiles/Group_User.dir/C_/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/main.o	43f32f9446856cff
+19	1934	8081888148727450	build.ninja	707a693a2484853d
+17	83	8081888149874811	C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/out/Template/ARMCLANG/Release/compile_commands.json	a573a3dec80dcbcb
+10	132	8081888206543533	CMakeFiles/Group_Library.dir/C_/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/scs0009_servo_driver.o	3029774e29a0be29
+132	526	8081888207770315	C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/out/Template/ARMCLANG/Release/Template.axf	af0a40878d808f5c

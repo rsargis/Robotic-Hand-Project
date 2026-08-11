@@ -1,0 +1,78 @@
+build:
+  generated-by: csolution version 2.14.0
+  solution: ../../../../Template.csolution.yml
+  project: ../../../../Template.cproject.yml
+  context: Template.Release+ARMCLANG
+  compiler: AC6
+  device: Nuvoton::M258KG6AE
+  device-pack: Nuvoton::NuMicroM23_DFP@1.0.6
+  processor:
+    core: Cortex-M23
+  packs:
+    - pack: Nuvoton::NuMicroM23_DFP@1.0.6
+      path: ${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6
+  optimize: balanced
+  debug: on
+  misc:
+    ASM:
+      - -masm=auto
+    C:
+      - -std=c11 -fno-rtti -funsigned-char -fshort-enums -fshort-wchar -ffunction-sections -fdata-sections -Wall
+      - -D__MICROLIB
+      - -Wconditional-uninitialized
+    CPP:
+      - -Wconditional-uninitialized
+    Link:
+      - --library_type=microlib --map --load_addr_map_info --symbols
+      - --info sizes --info totals --strict --summary_stderr --info summarysizes
+  add-path:
+    - ../../../../../../../Library/CMSIS/Core/Include
+    - ../../../../../../../Library/StdDriver/inc
+    - ../../../../../../../Library/Device/Nuvoton/M251/Include
+    - ${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include
+  add-path-asm:
+    - ${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include
+  output-dirs:
+    intdir: ../../../../tmp
+    outdir: .
+    rtedir: ../../../../RTE
+  output:
+    - type: bin
+      file: Template.bin
+    - type: elf
+      file: Template.axf
+    - type: comp-db
+      file: compile_commands.json
+    - type: comp-db
+      file: compile_macros.h
+  linker:
+    script: ../../../../../../../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf
+  groups:
+    - group: CMSIS
+      files:
+        - file: ../../../../../../../Library/Device/Nuvoton/M251/Source/system_M251.c
+          category: sourceC
+        - file: ../../../../../../../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c
+          category: sourceC
+    - group: Library
+      files:
+        - file: ../../../../../../../Library/StdDriver/src/retarget.c
+          category: sourceC
+        - file: ../../../../../../../Library/StdDriver/src/uart.c
+          category: sourceC
+        - file: ../../../../../../../Library/StdDriver/src/sys.c
+          category: sourceC
+        - file: ../../../../../../../Library/StdDriver/src/clk.c
+          category: sourceC
+        - file: ../../../../../../../Library/StdDriver/src/gpio.c
+          category: sourceC
+        - file: ../../../../../scs0009_servo_driver.c
+          category: sourceC
+    - group: User
+      files:
+        - file: ../../../../../main.c
+          category: sourceC
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: Nuvoton::NuMicroM23_DFP@1.0.6

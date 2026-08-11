@@ -1,0 +1,7631 @@
+name: NuMicro M23 Family
+generated_from_pack: true
+pack_file_release: 1.0.6
+variants:
+- name: KM1M2DF02N
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: KM1M2DF02R
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: KM1M2DF03N
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: KM1M2DF03R
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: KM1M2DF04N
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: KM1M2DF04R
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0xf200000
+      end: 0xf200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM4
+    range:
+      start: 0xf400000
+      end: 0xf402000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+  - km1m2_data_8
+- name: M2003ED4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003FC1AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20001000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003LD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003LE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003LG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20009000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003LI7AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+- name: M2003R1G6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20009000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003RG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20009000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20009000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003SI7AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+- name: M2003SJ7AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+- name: M2003TD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003TE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2003VI7AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+- name: M2003VJ7AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000c000
+    cores:
+    - main
+  flash_algorithms:
+  - km1m2_ap_1m
+  - km1m2_ld_4
+  - km1m2_sp_1
+- name: M2003XC1AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200400
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20001000
+    cores:
+    - main
+  flash_algorithms:
+  - m2003_ap_256
+  - m2003_ld_4
+  - m2003_sp_1
+- name: M2351CIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2351KIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2351KIAAEES
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2351SFSIAAP
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2351SIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2351ZIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10080000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30008000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+  - m2351_ns
+  - m2351_ns_mkrom
+- name: M2354CJFBE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354ES
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20020000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30020000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354KJFAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354KJFBE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354LJFAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354LJFBE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354SJFAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M2354SJFBE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x100000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x100000
+      end: 0x104000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x10000000
+      end: 0x10100000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20040000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x30000000
+      end: 0x30040000
+    cores:
+    - main
+    access:
+      execute: false
+  flash_algorithms:
+  - m2354_ap_1m
+  - m2354_ld_16
+  - m2354_ns
+- name: M251EB2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251EC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M251FB2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251FC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M251KE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251LC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M251LD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251LE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251LG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251SC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M251SD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251SE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251ZB2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M251ZC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M251ZD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252EC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M252FC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M252KE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252LC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M252LD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252LE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252LG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252SC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M252SD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252SE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M252ZC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: M252ZD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253LD3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253LD3BE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253LE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253LE3BE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253ZE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M253ZE3BE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254KE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254MD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254SD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254SD3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254SE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M254SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256KE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256MD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256SD2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256SE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M256SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M258KE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M258KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M258SE3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M258SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: M261KIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M261SIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M261ZIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M262KIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M262SIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M262ZIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M263KIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M263SIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M263ZIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - m2351_ap_512
+  - m2351_ld_4
+- name: M2A23LD5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_64
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23LE5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23LE5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23LG5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23LG5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23NE5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23NG5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23SD5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_64
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23SE5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23SE5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23SG5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23SG5ACU
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23YD5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_64
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23YE5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2A23YG5AC
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20006000
+    cores:
+    - main
+  flash_algorithms:
+  - m2a23_ap_256
+  - m2a23_ld_4
+  - m2a23_sp_2
+- name: M2L31CGDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31CIDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31KGDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31KIDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31LD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31LE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31LG4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31LGDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31LIDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31SE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31SG4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31SGDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31SIDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31XD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31YD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31YE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31YG4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31YGDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31YIDAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2002a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31ZD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2L31ZE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf102000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x2000a000
+    cores:
+    - main
+  flash_algorithms:
+  - m2l31_ap_512
+  - m2l31_ld_8
+- name: M2U51EC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U51FC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U51TC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U51YC2AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U51YD3AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54AE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54AG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54KE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54KG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54SE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54SG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54YE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: M2U54YG6AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0xf100000
+      end: 0xf101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20008000
+    cores:
+    - main
+  flash_algorithms:
+  - m2u51_ap_256
+  - m2u51_ld_4
+- name: MR63KIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - mr63_ap_512
+  - mr63_ld_4
+- name: MR63SIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - mr63_ap_512
+  - mr63_ld_4
+- name: MR63ZIAAE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x80000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20018000
+    cores:
+    - main
+  flash_algorithms:
+  - mr63_ap_512
+  - mr63_ld_4
+- name: NDA102SD2
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20003000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: NDA102SE3
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20004000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: NDA102TD2
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_256
+  - m251_ld_4
+- name: NDA102UD2
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20002000
+    cores:
+    - main
+  flash_algorithms:
+  - m251_ap_32
+  - m251_ld_4
+- name: NSPD5ZD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1262LE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc126_ap_128
+  - nuc126_ld_4
+  - nuc1263_sp_2
+- name: NUC1262NE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc126_ap_128
+  - nuc126_ld_4
+  - nuc1263_sp_2
+- name: NUC1262SE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc126_ap_128
+  - nuc126_ld_4
+  - nuc1263_sp_2
+- name: NUC1262YE4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc126_ap_128
+  - nuc126_ld_4
+  - nuc1263_sp_2
+- name: NUC1263LD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263LD4CE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263ND4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263ND4CE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263SD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263SD4CE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263ZD4AE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+- name: NUC1263ZD4CE
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: !v1 0
+  memory_map:
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    cores:
+    - main
+    access:
+      write: false
+      boot: true
+  - !Nvm
+    name: IROM2
+    range:
+      start: 0x100000
+      end: 0x101000
+    cores:
+    - main
+    access:
+      write: false
+  - !Nvm
+    name: IROM3
+    range:
+      start: 0x200000
+      end: 0x200800
+    cores:
+    - main
+    access:
+      write: false
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x20000000
+      end: 0x20005000
+    cores:
+    - main
+  flash_algorithms:
+  - nuc1263_ap_64
+  - nuc1263_ld_4
+  - nuc1263_sp_2
+flash_algorithms:
+- name: km1m2_ap_1m
+  description: KM1M2 APROM 1MB
+  default: true
+  instructions: sLUcSVkgCGAWIAhgiCAIYApoASABKizRF0pTaBsHBtQTaAgkHEMUYFNoGwf81RNLWm8KsQAiWmcRTAAiImARTBxgQPIBE8tiymIPS20hGWAZaC0kDEAtLAvRAiHZZAtLSSQcYBxoCSUlQAktAdHZZBBGsL0AAQBAABAAQIwQAECAEQBAAQEBAADAAEAA8ABABUkIbMAH/NEAIAhgA0kKbNIH/NEIYHBHAMAAQADwAEAQtQFGgA08KA3YGEoiINBgUWBA8gAggUN5IEMFACCZQhHQwUMQ4BBKIiDQYFFgASAQYb/zb48RbMkH/NERaEsGENQAIBC9CkmRYAEhEWG/82+PE2zbB/zRE2hcBgPVE2AIRhC9EWAQvQDwAEAAwABAA6pVAPC1gbABJGK5ThwAJXYeB9AHHQBo//e6/wAoOEb20ADgLEYgRgGw8L3wtYOwgwcD0AEhCEYDsPC9zhwDIY5DgQ09KVbSR0IHJCdAQQc7SwGUF9ARaGEl3WAFRqVDXWAAJe1DN0wlYGFgASEZYb/zb48dbO0H/NEcaGUGVdTSGTgYAZz3GwCXp0MY0GEhApEBIRVoVGgCnt5gWGApTjVgdGAZYb/zb48cbOQH/NEdaGwGPtQIPwgyCDAAL+nRAJlJQgGcIUA20BFoYSLaYFhgHEoRYAAhyENQYAEgGGG/82+PGmzSB/zRGmhUBqLVGmABRp/nACEALpzQApEPTCElASEXaOVgYGCnYCFhv/Nvjyds/wf80SdoewYI1DYfEh0AHQAu7dECmYTnHGCC5ydggOcdYH7nACF85wDwAEAAwABAgMAAQPC1g7CDBwHQA7DwvckcAyOZQ/nQG0scTAAlApUBJh1GCDUBlSVGCDUAlYUNPC0N2AKd3WBYYB5hv/Nvjx1s7Qf80R1obwYBnw3VFuACneVgYGAmYb/zb48lbO0H/NElaG8GAJ8L1D1oF2i9QszRCR8SHQAdACnY0cbnHWDE5yVgwufARgDAAEAA8ABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x91
+  pc_program_page: 0x14d
+  pc_erase_sector: 0xb1
+  pc_verify: 0x269
+  data_section_offset: 0x2f4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x100000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: km1m2_ld_4
+  description: KM1M2 LDROM 4kB
+  default: true
+  instructions: sLUcSVkgCGAWIAhgiCAIYApoASABKizRF0pTaBsHBtQTaAgkHEMUYFNoGwf81RNLWm8KsQAiWmcRTAAiImARTBxgQPIBE8tiymIPS20hGWAZaC0kDEAtLAvRAiHZZAtLSSQcYBxoCSUlQAktAdHZZBBGsL0AAQBAABAAQIwQAECAEQBAAQEBAADAAEAA8ABABUkIbMAH/NEAIAhgA0kKbNIH/NEIYHBHAMAAQADwAEAQtQFGgA08KA3YGEoiINBgUWBA8gAggUN5IEMFACCZQhHQwUMQ4BBKIiDQYFFgASAQYb/zb48RbMkH/NERaEsGENQAIBC9CkmRYAEhEWG/82+PE2zbB/zRE2hcBgPVE2AIRhC9EWAQvQDwAEAAwABAA6pVAPC1gbABJGK5ThwAJXYeB9AHHQBo//e6/wAoOEb20ADgLEYgRgGw8L3wtYOwgwcD0AEhCEYDsPC9zhwDIY5DgQ09KVbSR0IHJCdAQQc7SwGUF9ARaGEl3WAFRqVDXWAAJe1DN0wlYGFgASEZYb/zb48dbO0H/NEcaGUGVdTSGTgYAZz3GwCXp0MY0GEhApEBIRVoVGgCnt5gWGApTjVgdGAZYb/zb48cbOQH/NEdaGwGPtQIPwgyCDAAL+nRAJlJQgGcIUA20BFoYSLaYFhgHEoRYAAhyENQYAEgGGG/82+PGmzSB/zRGmhUBqLVGmABRp/nACEALpzQApEPTCElASEXaOVgYGCnYCFhv/Nvjyds/wf80SdoewYI1DYfEh0AHQAu7dECmYTnHGCC5ydggOcdYH7nACF85wDwAEAAwABAgMAAQPC1g7CDBwHQA7DwvckcAyOZQ/nQG0scTAAlApUBJh1GCDUBlSVGCDUAlYUNPC0N2AKd3WBYYB5hv/Nvjx1s7Qf80R1obwYBnw3VFuACneVgYGAmYb/zb48lbO0H/NElaG8GAJ8L1D1oF2i9QszRCR8SHQAdACnY0cbnHWDE5yVgwufARgDAAEAA8ABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x91
+  pc_program_page: 0x14d
+  pc_erase_sector: 0xb1
+  pc_verify: 0x269
+  data_section_offset: 0x2f4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf100000
+      end: 0xf101000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: km1m2_sp_1
+  description: KM1M2 SPROM 1kB
+  default: true
+  instructions: sLUcSVkgCGAWIAhgiCAIYApoASABKizRF0pTaBsHBtQTaAgkHEMUYFNoGwf81RNLWm8KsQAiWmcRTAAiImARTBxgQPIBE8tiymIPS20hGWAZaC0kDEAtLAvRAiHZZAtLSSQcYBxoCSUlQAktAdHZZBBGsL0AAQBAABAAQIwQAECAEQBAAQEBAADAAEAA8ABABUkIbMAH/NEAIAhgA0kKbNIH/NEIYHBHAMAAQADwAEAQtQFGgA08KA3YGEoiINBgUWBA8gAggUN5IEMFACCZQhHQwUMQ4BBKIiDQYFFgASAQYb/zb48RbMkH/NERaEsGENQAIBC9CkmRYAEhEWG/82+PE2zbB/zRE2hcBgPVE2AIRhC9EWAQvQDwAEAAwABAA6pVAPC1gbABJGK5ThwAJXYeB9AHHQBo//e6/wAoOEb20ADgLEYgRgGw8L3wtYOwgwcD0AEhCEYDsPC9zhwDIY5DgQ09KVbSR0IHJCdAQQc7SwGUF9ARaGEl3WAFRqVDXWAAJe1DN0wlYGFgASEZYb/zb48dbO0H/NEcaGUGVdTSGTgYAZz3GwCXp0MY0GEhApEBIRVoVGgCnt5gWGApTjVgdGAZYb/zb48cbOQH/NEdaGwGPtQIPwgyCDAAL+nRAJlJQgGcIUA20BFoYSLaYFhgHEoRYAAhyENQYAEgGGG/82+PGmzSB/zRGmhUBqLVGmABRp/nACEALpzQApEPTCElASEXaOVgYGCnYCFhv/Nvjyds/wf80SdoewYI1DYfEh0AHQAu7dECmYTnHGCC5ydggOcdYH7nACF85wDwAEAAwABAgMAAQPC1g7CDBwHQA7DwvckcAyOZQ/nQG0scTAAlApUBJh1GCDUBlSVGCDUAlYUNPC0N2AKd3WBYYB5hv/Nvjx1s7Qf80R1obwYBnw3VFuACneVgYGAmYb/zb48lbO0H/NElaG8GAJ8L1D1oF2i9QszRCR8SHQAdACnY0cbnHWDE5yVgwufARgDAAEAA8ABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x91
+  pc_program_page: 0x14d
+  pc_erase_sector: 0xb1
+  pc_verify: 0x269
+  data_section_offset: 0x2f4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf200000
+      end: 0xf200400
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: km1m2_data_8
+  description: KM1M2 Data Flash 8kB
+  default: true
+  instructions: sLUZSVkgCGAWIAhgiCAIYApoASABKiXRFEpTaBsHBtQTaAgkHEMUYFNoGwf81RBLWm8KsQAiWmcOTAAiImAcaA1NJUMdYEDyABPLYspiC0lJIwtgC2gJJBxACSwC0QIgyGQQRrC9wEYAAQBAABAAQIwQAECAEQBAAAEBAADwAEADSQhswAf80QAgCGBwR8BGAPAAQAxJCmzSB/zRCmhAIxNDC2AiIspgSGABIAhhv/Nvjwps0gf80QpoUwYB1AAgcEcKYHBHwEYA8ABA8LWBsIMHA9ABIQhGAbDwvcwcE0sZbMkH/NEZaEAlDUMdYAMhjEMAIQAs7tAAkSEmASEXaN5gWGCfYBlhv/Nvjx9s/wf80R9ofQYG1CQfEh0AHQAs7dEAmdfnH2DV58BGAPAAQPC1gwcA0PC9yxwSSQxs5Af80QxoQCUlQw1gAySjQ/LQACQBJcxgSGANYb/zb48ObPYH/NEOaHcGCdSOaBdovkLh0RsfEh0AHQAr69Hb5w5g8L3ARgDwAEAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x81
+  pc_program_page: 0xcd
+  pc_erase_sector: 0x95
+  pc_verify: 0x131
+  data_section_offset: 0x188
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf400000
+      end: 0xf402000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2003_ap_256
+  description: M2003 APROM 256kB
+  default: true
+  instructions: GEhZIQFgFiEBYIghAWAAaAEoJdEUSAFtyQYG1AFoBCIKQwJgAW3JBvzVAWkHIgpABSoF0AFpBSIKQwIhikMCYQAhAWJBaAIiCkNCYAdIbSEBYAFoLSAIQC04QR6IQXBHASBwRwABAEAAAgBAAMAAQANJCGzAB/zRACAIYHBHwEYAwABAELUBRhFKEGzAB/zREGhAIwNDE2AiINBgUWBA8gAggUMBI1wFACChQgHQwUMA4AhJkWATYb/zb48RbMkH/NERaEwGAdURYBhGEL3ARgDAAEADqlUA8LWBsAEkYrlOHAAldh4H0AcdAGj/98r/ACg4RvbQAOAsRiBGAbDwvfC1gwcB0AEhI+DMHBJLGWzJB/zRGWhAJQ1DHWAhIdlgAyGMQwAljLEBIVhgFmieYBlhv/Nvjx5s9gf80R5odwYG1CQfEh0AHQAs7tEpRgDgHmAIRvC9wEYAwABAcLWDBwDQcL3LHBJJDGzkB/zRDGhAJSVDDWAAJMxgAySjQ/DQASRIYAxhv/Nvjw1s7Qf80Q1obgYJ1I1oFmi1QuHRGx8SHQAdACvs0dvnDWBwvcBGAMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x71
+  pc_program_page: 0x101
+  pc_erase_sector: 0x85
+  pc_verify: 0x15d
+  data_section_offset: 0x1b4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2003_ld_4
+  description: M2003 LDROM 4kB
+  default: true
+  instructions: GEhZIQFgFiEBYIghAWAAaAEoJdEUSAFtyQYG1AFoBCIKQwJgAW3JBvzVAWkHIgpABSoF0AFpBSIKQwIhikMCYQAhAWJBaAIiCkNCYAdIbSEBYAFoLSAIQC04QR6IQXBHASBwRwABAEAAAgBAAMAAQANJCGzAB/zRACAIYHBHwEYAwABAELUBRhFKEGzAB/zREGhAIwNDE2AiINBgUWBA8gAggUMBI1wFACChQgHQwUMA4AhJkWATYb/zb48RbMkH/NERaEwGAdURYBhGEL3ARgDAAEADqlUA8LWBsAEkYrlOHAAldh4H0AcdAGj/98r/ACg4RvbQAOAsRiBGAbDwvfC1gwcB0AEhI+DMHBJLGWzJB/zRGWhAJQ1DHWAhIdlgAyGMQwAljLEBIVhgFmieYBlhv/Nvjx5s9gf80R5odwYG1CQfEh0AHQAs7tEpRgDgHmAIRvC9wEYAwABAcLWDBwDQcL3LHBJJDGzkB/zRDGhAJSVDDWAAJMxgAySjQ/DQASRIYAxhv/Nvjw1s7Qf80Q1obgYJ1I1oFmi1QuHRGx8SHQAdACvs0dvnDWBwvcBGAMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x71
+  pc_program_page: 0x101
+  pc_erase_sector: 0x85
+  pc_verify: 0x15d
+  data_section_offset: 0x1b4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2003_sp_1
+  description: M2003 SPROM 1kB
+  default: true
+  instructions: GEhZIQFgFiEBYIghAWAAaAEoJdEUSAFtyQYG1AFoBCIKQwJgAW3JBvzVAWkHIgpABSoF0AFpBSIKQwIhikMCYQAhAWJBaAIiCkNCYAdIbSEBYAFoLSAIQC04QR6IQXBHASBwRwABAEAAAgBAAMAAQANJCGzAB/zRACAIYHBHwEYAwABAELUBRhFKEGzAB/zREGhAIwNDE2AiINBgUWBA8gAggUMBI1wFACChQgHQwUMA4AhJkWATYb/zb48RbMkH/NERaEwGAdURYBhGEL3ARgDAAEADqlUA8LWBsAEkYrlOHAAldh4H0AcdAGj/98r/ACg4RvbQAOAsRiBGAbDwvfC1gwcB0AEhI+DMHBJLGWzJB/zRGWhAJQ1DHWAhIdlgAyGMQwAljLEBIVhgFmieYBlhv/Nvjx5s9gf80R5odwYG1CQfEh0AHQAs7tEpRgDgHmAIRvC9wEYAwABAcLWDBwDQcL3LHBJJDGzkB/zRDGhAJSVDDWAAJMxgAySjQ/DQASRIYAxhv/Nvjw1s7Qf80Q1obgYJ1I1oFmi1QuHRGx8SHQAdACvs0dvnDWBwvcBGAMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x71
+  pc_program_page: 0x101
+  pc_erase_sector: 0x85
+  pc_verify: 0x15d
+  data_section_offset: 0x1b4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x200000
+      end: 0x200400
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2351_ap_512
+  description: M2351 512kB Flash AP
+  default: true
+  instructions: sLUPSxxsASUsQvvRHWhAJCVDHWDYYFlgACDBQwKxCUmZYAEhGWG/82+PGmwKQvzRGWghQgPQGGggQxhgASCwvQDAAEADqlUAEUhZIQFgFiEBYIghAWAAaAEhCEIB0QEgcEcMSAJoBCEKQwJgAm0QIxpC+9BCaApDQmAHSAFoKSIRQwFgAGgQQCk4QR6IQXBHAAEAQAACAEAAwABABEgCbAEhCkL70QJoikMCYAAgcEcAwABAELUPSQEgyGEKbAJC/NEIaEAiEEMIYCYgyGAAIEhgw0OLYAEjC2G/82+PDGwcQvzRC2gTQgPQCGgQQwhgASAQvQDAAEDwtRVMBEAVSWYYDyENBQVAE0kIbAEjGEL70QhoQCIQQwhgIiDIYF8FvUIA0CZGTmAAIMRDvUIA0QpMjGALYb/zb48MbBxC/NELaBNCA9AIaBBDCGABIPC9APj/7wAA4P8AwABAA6pVAPC1hrANRgKQACIAKQDR3+AAJvBDcksEkAWQMEYAlQLgdhwFlJrgA5CAAAKZClgBJzkHEEaIQw8hCQURQHwFoUIa0QRGGWwBIhFC+9EaaEAhCkMaYCIi2mBjSCAYWGBjSJhgASAYYb/zb48abAJC/NEYaAhCctCd4AENBEZY0VlIAkAFmEEcTtASs/ECBZgJGIxCHdF2HAQuYNEYbDhC/NEZaEAgAUMZYCUh2WAFmVlgBJmZYAEhGWG/82+PGmwKQvzRGWgAJgFCBJkFkUbQguABlPaxACE1RswCHmw+QvzRGGhAJjBDGGAiINhgBZggGFhgBJiYYAEkHGG/82+PGGwgQvzRSRwYaDBCTtEuRqlC4dMAJgAqBJgFkACdAZwH0QWUPkYa4AAqANF55wSYBZAYbDhC/NEYaEAhCEMYYCIg2GBcYASYmGABIBhhv/NvjxpsAkL80RhoCEIw0QOYQByoQgDSX+cAIpazACDCAhlsASQhQvvRHGhAIQxDHGAiJNxgBZwSGVpgBJqaYAEiGmG/82+PHGwUQvzRQBwaaApCEtEAIrBC4dMS4BhoMEMYYAEiDeAYaAhDGGABIgjgGGgIQxhgASID4BhoCEMYYAEiEEYGsPC9GWgBQxlgASL35wDAAED/HwAAAADg/wOqVQDwtcwcAyGMQxRLGWwBJjFC+9EZaEAlKUMZYCEh2WAAIZyxNgewQ1hgFmieYAEmHmG/82+PH2w3QvzRHmguQgbRJB8SHQAdACzt0QhG8L0YaChDGGABIQhG8L3ARgDAAEDwtYGwyxwDIYtDQUkMbAElLEL70Q5oQCc+Qw5gLgcFRrVDLg0n0QCXISbOYEBCDyc4QJhCHkYA2AZGmxsYRrhDGxoeuRzgNh8tHc6xTWAXaI9gAScPYb/zb48MbDxC/NESHQxoAJ88Qu3QCGg4QwhgASABsPC9ISDIYCcgyGAi4CckzGDwsQCfTWAUaIAmjFFUaIQmjFGUaIgmjFHUaIwmjFEBJg5hv/Nvj8AkDFk0QvvREDIMaDxCI9EQOBA1ACji0QDgAJ8hIMhgACAzuQGw8L0bHy0dEh0AK/jQTWAUaIxgASYOYb/zb48MbDRC/NEMaDxC7dAIaDhDCGABIAGw8L0IaDhDCGABIAGw8L3ARgDAAEDwtQElLgcDRjNAzBwUSQ9sL0L80Q9oQCUvQw9gACfPYAMnvEOwQyS5EuAkHxIdAB10sUhgASYOYb/zb48PbDdC/NEOaC5CBdGOaBdovkLs0BhD8L0KaCpDCmAYQ/C9wEYAwABA8LXMHBZLHWwBIQ1C+9EeaEAlLkMeYAAm3mADJrRDDgcBRrFDMEAkuRbgJB8SHQkdlLFZYAEmHmG/82+PH2w3QvzRHmguQgTRnmgXaL5C7NAC4BpoKkMaYAFDCEbwvcBGAMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x49
+  pc_uninit: 0x9d
+  pc_program_page: 0x351
+  pc_erase_sector: 0xf9
+  pc_erase_all: 0xb5
+  pc_verify: 0x4c5
+  data_section_offset: 0x58c
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x80000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2351_ld_4
+  description: M2351 4kB Flash LD
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0xb5
+  pc_uninit: 0x149
+  pc_program_page: 0x3b5
+  pc_erase_sector: 0x199
+  pc_erase_all: 0x179
+  pc_verify: 0x6ad
+  data_section_offset: 0x7a8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2351_ns
+  description: M2351 Non-Secure AP
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x1b5
+  pc_program_page: 0x689
+  pc_erase_sector: 0x341
+  pc_verify: 0xa79
+  data_section_offset: 0xd44
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x10000000
+      end: 0x10080000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2351_ns_mkrom
+  description: M2351 Non-Secure AP (MKROM)
+  default: true
+  instructions: sLWIsBNGDEYFRgeQBpEFkgSTA5QClQDwz/gAIQGQCEYIsLC9gLWCsAFGAZAAkQDwyfgAIAKwgL2AtYSwAUYCkAKYAZEA8MT4ACgD0P/nASADkALgACADkP/nA5gEsIC9sLWKsBNGDEYFRgiQB5EGkgSTA5QClf/nB5gAKCbQ/+cHmMAKACgE0P/nQPYAAAGQAuAHmAGQ/+cBmAWQCJgGmQWaAPCb+AAoA9D/5wEgCZAP4AWYCJkIGAiQBZgGmQgYBpAFmAeZCBoHkNXnACAJkP/nCZgKsLC9cLU0S51ENUtrRBRGDUYGRlhhGWHaYFhpGGAEkwOUApUBlv/nBJgBaQApStD/5wSYAWnJCgApBND/50D2AAAAkAPgBJgBaQCR/+cAmASZSGBIaUpoBakA8Fv4ACgE0P/nBJhBaYFhMOAAIASZiGD/5wSYgWhCaJFCGdr/5wSYgWgFqlJcw2hEaQVoZBthGFlcikIG0P/nBJhBaYJoiRiBYRPg/+cEmIFoSRyBYODnBJhBaEJpURhBYUFoAmlRGgFhsOcEmEFpgWH/5wSYgGkCSY1EcL3Q9///MAgAABQIAAADtAFIAZABvRl+gAADtAFIAZABvRF+gAADtAFIAZABvUF+gAADtAFIAZABvTl+gAADtAFIAZABvTF+gAAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x25
+  pc_program_page: 0x61
+  pc_erase_sector: 0x39
+  pc_verify: 0xd9
+  data_section_offset: 0x1f4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x10000000
+      end: 0x10080000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2354_ap_1m
+  description: M2354 APROM 1MB
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xf1
+  pc_program_page: 0x29d
+  pc_erase_sector: 0x1e9
+  pc_erase_all: 0x1a9
+  pc_verify: 0x589
+  data_section_offset: 0x668
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x100000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2354_ld_16
+  description: M2354 LDROM 16kB
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xf1
+  pc_program_page: 0x29d
+  pc_erase_sector: 0x1e9
+  pc_erase_all: 0x1a9
+  pc_verify: 0x589
+  data_section_offset: 0x668
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x104000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2354_ns
+  description: M2354 Non-Secure AP 1MB
+  default: true
+  instructions: hbADkAKRAZL/5wOYAGzABwix/+f55wOZCGhAIhBDCGADmSIgyGACmAOZSGABmAOZiGADmQEgCGG/82+P/+cDmABswAcIsf/n+ecDmABoAJBoRgB4QAYAKAbV/+cAmAOZCGABIASQAuAAIASQ/+cEmAWwcEeGsASQA5ECknhGAZABmACQaEbAeMAGACgi1f/nBSAABwBoGLn/5wEgBZBz4EZIWSEBYBYhAWCIIQFgAGjABxi5/+cBIAWQZeBASEkhAWAAaBi5/+cBIAWQXOAAIAWQWeAuSFkhAWAWIQFgiCEBYABowAcYuf/nASAFkEvgKEkIaChKEEMIYChJCGgEIhBDCGD/5yZIAGhQIQhAUCgB0P/n9+cjSGkhAWAAaCkhCEApKAPQ/+cBIAWQLOAeSQhoBSIQQwIikEMIYBtJCGgPIpBDCGD/5xlIAGgABgAoAdX/5/jnFkkIaAIiEEMBIpBDCGD/5xNIAGjABwix/+f55xFJCGgCIhBDDSKQQwhg/+cAIAWQ/+cFmAawcEfARgABAEAAAgBABAAEAAQCAEBQAgBAAMAAQBACAEAgAgBA+AEAQPwBAEBMwABAAAEAUADAAFCGsAWQeEYDkAOYApACmMEACkgLSgCSACkBkAHUAJgBkAGYBJD/5wSYAGzABwix/+f55wSZACAIYAawcEcAwABQAMAAQIC1hrAFkHhGA5ADmAKQApjBAA1IDUoAkgApAZAB1ACYAZABmASQBZgBIQkHiEMFkAWYB0kIQAWQBZkEmAAi//fb/gawgL3ARgDAAFAAwABAAPj//4C1kLAOkA2RDJIAIAqQDJgCKAPT/+cBIA+QPuB4RgaQBpgFkAWYwQAdSB5KA5IAKQSQAdQDmASQBJgLkAyZAZEZSAKQCbkBmAKQApgIkP/nCpgNmYhCHdL/5w6YCplKHAqSiQBAWAmQCZgBIQkHiEMJkAmYDUkIQAmQC5gJmQia//eQ/geQB5gYsf/nASAPkAPg3ecAIA+Q/+cPmBCwgL0AwABQAMAAQAOqVQAA+P//irAIkAeRBpIIqAB4gAcYsf/nASAJkFvgeEYDkAOYApACmMEALEgtSgCSACkBkAHUAJgBkAGYBZAHmMAcAyGIQweQCJgBIQkHiEMIkP/nBZgAbMAHCLH/5/nnBZkIaEAiEEMIYAWZISDIYP/nB5hgs//nCJgFmUhgBpgAaAWZiGAFmQEgCGG/82+P/+cFmABswAcIsf/n+ecFmABoBJAEqAB4QAYAKAbV/+cEmAWZCGABIAmQDOAImAAdCJAGmAAdBpAHmAAfB5DQ5wAgCZD/5wmYCrBwR8BGAMAAUADAAECLsAmQCJEHkgmoAHiABxix/+cJmAqQYuB4RgOQA5gCkAKYwQAvSDBKAJIAKQGQAdQAmAGQAZgGkAiYwBwDIYhDCJAJmAEhCQcIQASQCZiIQwmQ/+cGmABswAcIsf/n+ecGmQhoQCIQQwhgBpkAIMhg/+cImHCz/+cJmAaZSGAGmQEgCGG/82+P/+cGmABswAcIsf/n+ecGmABoBZAFqAB4QAYAKATV/+cFmAaZCGAR4AaYgGgHmQloiEIB0P/nCeAJmAAdCZAHmAAdB5AImAAfCJDO5wmYBJkIQwqQ/+cKmAuwcEcAwABQAMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x75
+  pc_uninit: 0x1c5
+  pc_program_page: 0x30d
+  pc_erase_sector: 0x209
+  pc_verify: 0x3ed
+  data_section_offset: 0x4d8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x10000000
+      end: 0x10100000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m251_ap_256
+  description: M251 256kB Flash AP
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xb7
+  pc_program_page: 0x261
+  pc_erase_sector: 0x1d1
+  pc_verify: 0x5c9
+  data_section_offset: 0x6c8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m251_ld_4
+  description: M251 4kB Flash LD
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xcf
+  pc_program_page: 0x297
+  pc_erase_sector: 0x207
+  pc_verify: 0x5ff
+  pc_blank_check: 0x113
+  data_section_offset: 0x700
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m251_ap_32
+  description: M251 32kB Flash AP
+  default: true
+  instructions: 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
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xa9
+  pc_program_page: 0x225
+  pc_erase_sector: 0x195
+  pc_verify: 0x531
+  data_section_offset: 0x608
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x8000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2a23_ap_64
+  description: M2A23 APROM 64kB
+  default: true
+  instructions: hLACkAGRAJIjSFkhAWAWIQFgiCEBYABoASgD0P/nASADkDbgHUgAaMAGACgO1P/nG0kIaAQiEEMIYP/nF0gAaMAGACgB1P/n+Of/5xVIAGgHIQhABSgI0P/nEkkIaAUiEEMCIpBDCGD/5w9JCGgCIhBDCGANSG0hAWAAaC0hCEAtKAPQ/+cBIAOQAuAAIAOQ/+cDmASwcEcAAQBAUAIAQAACAEAQAgBABAIAQADAAECBsACQ/+cFSABowAcIsf/n+ecDSQAgCGABsHBHQMAAQADAAECDsAGQ/+cgSABowAcIsf/n+eceSQhoQCIQQwhgHEkiIAhgAZgbSQhgAZgBIUkFiEIE0f/nGEkZSAhgBOAAIMBDFUkIYP/nFkkBIAhgv/Nvj//nDUgAaMAHCLH/5/nnC0gAaACQaEYAeEAGACgG1f/nAJgGSQhgASACkALgACACkP/nApgDsHBHQMAAQADAAEAMwABABMAAQAjAAEADqlUAEMAAQIC1hrAEkAORApIAIAGQApgYsf/nASAFkBbg/+cBmAOZiEIO0v/nBJgBmUocAZKJAEBY//eT/xix/+cBIAWQA+Ds5wAgBZD/5wWYBrCAvcBGhbADkAKRAZIDqAB4gAcYsf/nASAEkEbgApjAHAMhiEMCkP/nIUgAaMAHCLH/5/nnH0kIaEAiEEMIYB5JISAIYP/nAphgs//nA5gbSQhgAZgAaBpJCGAaSQEgCGC/82+P/+cSSABowAcIsf/n+ecQSABoAJBoRgB4QAYAKAbV/+cAmAtJCGABIASQDOADmAAdA5ABmAAdAZACmAAfApDQ5wAgBJD/5wSYBbBwR0DAAEAAwABADMAAQATAAEAIwABAEMAAQIWwA5ACkQGSA6gAeIAHGLH/5wOYBJBK4AKYwBwDIYhDApD/5yNIAGjABwix/+f55yFJCGhAIhBDCGAgSQAgCGD/5wKYgLP/5wOYHUkIYB1JASAIYL/zb4//5xZIAGjABwix/+f55xRIAGgAkGhGAHhABgAoBNX/5wCYD0kIYBPgEUgAaACQAJgBmQloiEIB0P/nCeADmAAdA5ABmAAdAZACmAAfApDM5wOYBJD/5wSYBbBwR0DAAEAAwABADMAAQATAAEAQwABACMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xb1
+  pc_program_page: 0x1c9
+  pc_erase_sector: 0xd5
+  pc_verify: 0x28d
+  data_section_offset: 0x358
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x10000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2a23_ld_4
+  description: M2A23 LDROM 4kB
+  default: true
+  instructions: sLWHsBNGDEYFRgWQBJEDkiVIWSEBYBYhAWCIIQFgAGgBKAKTAZQAlQPQ/+cBIAaQNuAeSABoECEIQg7R/+ccSAFoBCIRQwFg/+cYSABoECEIQgHR/+f45//nFkgAaAchCEAFKAjQ/+cSSAFoByKRQwUiEUMBYP/nD0gBaAIiEUMBYA5IbSEBYABoLSEIQC0oA9D/5wEgBpAC4AAgBpD/5waYB7CwvcBGAAEAQFACAEAAAgBAEAIAQAQCAEAAwABAgrABRgGQAJH/5wZIAGgBIQhCAdD/5/jnA0gAIQFgCEYCsHBHQMAAQADAAECEsAFGApAAkf/nJEgAaAEhCEIB0P/n+OchSAFoQCIRQwFgIEgiIQFgApgfSQhgApgBIUkFiEIF0P/nApgbSYhCBNH/5xpIG0kBYATgACDAQxdJCGD/5xhIASEBYL/zb4//5w5IAGgBIQhCAdD/5/jnC0gAaAGQAagAeEAGACgG1f/nAZgGSQhgASADkALgACADkP/nA5gEsHBHwEZAwABAAMAAQAzAAEAEwABAAAIgAAjAAEADqlUAEMAAQLC1iLATRgxGBUYGkAWRBJIAIAOQBJgAKAKTAZQAlQPQ/+cBIAeQF+D/5wOYBZmIQg/S/+cGmAOZShwDkokAQFj/94D/ACgD0P/nASAHkAPg6+cAIAeQ/+cHmAiwsL3ARrC1iLATRgxGBUYGkAWRBJIGqAB4gAcAKAKTAZQAlQPQ/+cBIAeQSeAFmMAcAyGIQwWQ/+cjSABoASEIQgHQ/+f45yFIAWhAIhFDAWAfSCEhAWD/5wWYACgt0P/nBpgcSQhgBJgAaBtJCGAbSAEhAWC/82+P/+cTSABoASEIQgHQ/+f45xBIAGgDkAOoAHhABgAoBtX/5wOYC0kIYAEgB5AM4AaYAB0GkASYAB0EkAWYAB8FkM7nACAHkP/nB5gIsLC9wEZAwABAAMAAQAzAAEAEwABACMAAQBDAAECwtYiwE0YMRgVGBpAFkQSSBqgAeIAHACgCkwGUAJUD0P/nBpgHkE3gBZjAHAMhiEMFkP/nJUgAaAEhCEIB0P/n+OcjSAFoQCIRQwFgIUgAIQFg/+cFmAAoMdD/5waYHkkIYB5IASEBYL/zb4//5xdIAGgBIQhCAdD/5/jnFEgAaAOQA6gAeEAGACgE1f/nA5gPSQhgE+ASSABoA5ADmASZCWiIQgHQ/+cJ4AaYAB0GkASYAB0EkAWYAB8FkMrnBpgHkP/nB5gIsLC9wEZAwABAAMAAQAzAAEAEwABAEMAAQAjAAEAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xc1
+  pc_program_page: 0x209
+  pc_erase_sector: 0xed
+  pc_verify: 0x2e5
+  data_section_offset: 0x3c8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2a23_sp_2
+  description: M2A23 SPROM 2kB
+  default: true
+  instructions: sLWHsBNGDEYFRgWQBJEDkiVIWSEBYBYhAWCIIQFgAGgBKAKTAZQAlQPQ/+cBIAaQNuAeSABowAYAKA7U/+ccSAFoBCIRQwFg/+cYSABowAYAKAHU/+f45//nFkgAaAchCEAFKAjQ/+cSSAFoBSIRQwIikUMBYP/nD0gBaAIiEUMBYA5IbSEBYABoLSEIQC0oA9D/5wEgBpAC4AAgBpD/5waYB7CwvcBGAAEAQFACAEAAAgBAEAIAQAQCAEAAwABAgrABRgGQAJH/5wZIAGjABwAoAdD/5/jnA0gAIQFgCEYCsHBHQMAAQADAAECEsAFGApAAkf/nIUgAaMAHACgB0P/n+OceSAFoQCIRQwFgHUgiIQFgApgcSQhgApgBIUkFiEIE0f/nGUgZSQFgBOAAIMBDFkkIYP/nFkgBIQFgv/Nvj//nDUgAaMAHACgB0P/n+OcLSABoAZABqAB4QAYAKAbV/+cBmAZJCGABIAOQAuAAIAOQ/+cDmASwcEdAwABAAMAAQAzAAEAEwABACMAAQAOqVQAQwABAsLWIsBNGDEYFRgaQBZEEkgAgA5AEmAAoApMBlACVA9D/5wEgB5AX4P/nA5gFmYhCD9L/5waYA5lKHAOSiQBAWP/3iP8AKAPQ/+cBIAeQA+Dr5wAgB5D/5weYCLCwvcBGsLWIsBNGDEYFRgaQBZEEkgaoAHiABwAoApMBlACVA9D/5wEgB5BJ4AWYwBwDIYhDBZD/5yNIAGjABwAoAdD/5/jnIUgBaEAiEUMBYB9IISEBYP/nBZgAKC3Q/+cGmBxJCGAEmABoG0kIYBtIASEBYL/zb4//5xNIAGjABwAoAdD/5/jnEEgAaAOQA6gAeEAGACgG1f/nA5gLSQhgASAHkAzgBpgAHQaQBJgAHQSQBZgAHwWQzucAIAeQ/+cHmAiwsL3ARkDAAEAAwABADMAAQATAAEAIwABAEMAAQLC1iLATRgxGBUYGkAWRBJIGqAB4gAcAKAKTAZQAlQPQ/+cGmAeQTeAFmMAcAyGIQwWQ/+clSABowAcAKAHQ/+f45yNIAWhAIhFDAWAhSAAhAWD/5wWYACgx0P/nBpgeSQhgHkgBIQFgv/Nvj//nF0gAaMAHACgB0P/n+OcUSABoA5ADqAB4QAYAKATV/+cDmA9JCGAT4BJIAGgDkAOYBJkJaIhCAdD/5wngBpgAHQaQBJgAHQSQBZgAHwWQyucGmAeQ/+cHmAiwsL3ARkDAAEAAwABADMAAQATAAEAQwABACMAAQAAAAAA=
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xc1
+  pc_program_page: 0x1f9
+  pc_erase_sector: 0xed
+  pc_verify: 0x2d5
+  data_section_offset: 0x3b8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x200000
+      end: 0x200800
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2a23_ap_256
+  description: M2A23 APROM 256kB
+  default: true
+  instructions: sLWHsBNGDEYFRgWQBJEDkiVIWSEBYBYhAWCIIQFgAGgBKAKTAZQAlQPQ/+cBIAaQNuAeSABoECEIQg7R/+ccSAFoBCIRQwFg/+cYSABoECEIQgHR/+f45//nFkgAaAchCEAFKAjQ/+cSSAFoByKRQwUiEUMBYP/nD0gBaAIiEUMBYA5IbSEBYABoLSEIQC0oA9D/5wEgBpAC4AAgBpD/5waYB7CwvcBGAAEAQFACAEAAAgBAEAIAQAQCAEAAwABAgrABRgGQAJH/5wZIAGgBIQhCAdD/5/jnA0gAIQFgCEYCsHBHQMAAQADAAECEsAFGApAAkf/nJEgAaAEhCEIB0P/n+OchSAFoQCIRQwFgIEgiIQFgApgfSQhgApgBIUkFiEIF0P/nApgbSYhCBNH/5xpIG0kBYATgACDAQxdJCGD/5xhIASEBYL/zb4//5w5IAGgBIQhCAdD/5/jnC0gAaAGQAagAeEAGACgG1f/nAZgGSQhgASADkALgACADkP/nA5gEsHBHwEZAwABAAMAAQAzAAEAEwABAAAIgAAjAAEADqlUAEMAAQLC1iLATRgxGBUYGkAWRBJIAIAOQBJgAKAKTAZQAlQPQ/+cBIAeQF+D/5wOYBZmIQg/S/+cGmAOZShwDkokAQFj/94D/ACgD0P/nASAHkAPg6+cAIAeQ/+cHmAiwsL3ARrC1iLATRgxGBUYGkAWRBJIGqAB4gAcAKAKTAZQAlQPQ/+cBIAeQSeAFmMAcAyGIQwWQ/+cjSABoASEIQgHQ/+f45yFIAWhAIhFDAWAfSCEhAWD/5wWYACgt0P/nBpgcSQhgBJgAaBtJCGAbSAEhAWC/82+P/+cTSABoASEIQgHQ/+f45xBIAGgDkAOoAHhABgAoBtX/5wOYC0kIYAEgB5AM4AaYAB0GkASYAB0EkAWYAB8FkM7nACAHkP/nB5gIsLC9wEZAwABAAMAAQAzAAEAEwABACMAAQBDAAECwtYiwE0YMRgVGBpAFkQSSBqgAeIAHACgCkwGUAJUD0P/nBpgHkE3gBZjAHAMhiEMFkP/nJUgAaAEhCEIB0P/n+OcjSAFoQCIRQwFgIUgAIQFg/+cFmAAoMdD/5waYHkkIYB5IASEBYL/zb4//5xdIAGgBIQhCAdD/5/jnFEgAaAOQA6gAeEAGACgE1f/nA5gPSQhgE+ASSABoA5ADmASZCWiIQgHQ/+cJ4AaYAB0GkASYAB0EkAWYAB8FkMrnBpgHkP/nB5gIsLC9wEZAwABAAMAAQAzAAEAEwABAEMAAQAjAAEAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xc1
+  pc_program_page: 0x209
+  pc_erase_sector: 0xed
+  pc_verify: 0x2e5
+  data_section_offset: 0x3c8
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 150
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: m2l31_ap_512
+  description: M2L31 APROM 512kB
+  default: true
+  instructions: hLACkAGRAJIwSFkhAWAWIQFgiCEBYABoASgD0P/nASADkFDgKkkIaCpKEEMIYCpJCGgEIhBDCGD/5yhIAGhQIQhAUCgB0P/n9+clSGkhAWAAaCkhCEApKAPQ/+cBIAOQMeAgSABoQPIAcQhAQPIAEYhCFtD/5//nGkgAaMAHCLH/5/nnGEkIaAEiEEMGIpBDCGD/5xNIAGjABwix/+f55//nEkkIaAYiEEMBIpBDCGAPSQhoDyKQQwhgDkkDIAhgACADkP/nA5gEsHBHAAEAQAACAEAEAAQABAIAQFACAEAAwABA/AEAQPgBAEAQAgBAIAIAQEzAAECBsACQ/+cHSABowAcIsf/n+ecFSQhoASKQQwhgACABsHBHwEZAwABAAMAAQIGwAJAAIAGwcEfARoOwAZD/5xpIAGjABwix/+f55xhJCGhAIhBDCGABmBZJCGAWSRZICGAWSSIgCGAWSQEgCGC/82+P/+cNSABowAcIsf/n+ecLSABoAJBoRgB4QAYAKAbV/+cAmAZJCGABIAKQAuAAIAKQ/+cCmAOwcEdAwABAAMAAQATAAEAIwABAA6pVAAzAAEAQwABAgLWIsAaQBZEEkgAgA5AEmAIoA9P/5wEgB5Ah4ASYGLn/5wAgB5Ab4P/nA5gFmYhCE9L/5waYA5mJAEBYApACmP/3mP8BkAGYGLH/5wGYB5AG4AOYQBwDkOfnACAHkP/nB5gIsIC9wEaFsAOQApEBkgOoAHiABxix/+cBIASQieACmMAcAyGIQwKQ/+dDSABowAcIsf/n+edBSQhoQCIQQwhg/+cCmAAocdD/5z1JACAIYD1JLyAIYDxJASAIYL/zb4//5zVIAGjABwix/+f55zNIAGgAkGhGAHhABgAoBtX/5wCYLkkIYAEgBJBS4AOYLEkIYAGYAGgtSQhgKkknIAhgKkkBIAhgv/Nvj//nI0gAaMAHCLH/5/nnIUgAaACQaEYAeEAGACgG1f/nAJgcSQhgASAEkC3gA5gaSQhgGkkhIAhgGUkBIAhgv/Nvj//nEkgAaMAHCLH/5/nnEEgAaACQaEYAeEAGACgG1f/nAJgLSQhgASAEkAzgA5gAHQOQAZgAHQGQApgAHwKQiucAIASQ/+cEmAWwcEfARkDAAEAAwABABMAAQAzAAEAQwABACMAAQIWwA5ACkQGSA6gAeIAHGLH/5wOYBJBI4AKYwBwDIYhDApD/5yJIAGjABwix/+f55yBJCGhAIhBDCGAfSQAgCGD/5wKYcLP/5wOYHEkIYBxJASAIYL/zb4//5xVIAGjABwix/+f55xNIAGgAkGhGAHhABgAoBNX/5wCYDkkIYBHgEEgAaAGZCWiIQgHQ/+cJ4AOYAB0DkAGYAB0BkAKYAB8CkM7nA5gEkP/nBJgFsHBHQMAAQADAAEAMwABABMAAQBDAAEAIwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xf9
+  pc_program_page: 0x225
+  pc_erase_sector: 0x125
+  pc_verify: 0x371
+  data_section_offset: 0x438
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x80000
+    page_size: 0x80
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: m2l31_ld_8
+  description: M2L31 LDROM 8kB
+  default: true
+  instructions: hLACkAGRAJIwSFkhAWAWIQFgiCEBYABoASgD0P/nASADkFDgKkkIaCpKEEMIYCpJCGgEIhBDCGD/5yhIAGhQIQhAUCgB0P/n9+clSGkhAWAAaCkhCEApKAPQ/+cBIAOQMeAgSABoQPIAcQhAQPIAEYhCFtD/5//nGkgAaMAHCLH/5/nnGEkIaAEiEEMGIpBDCGD/5xNIAGjABwix/+f55//nEkkIaAYiEEMBIpBDCGAPSQhoDyKQQwhgDkkDIAhgACADkP/nA5gEsHBHAAEAQAACAEAEAAQABAIAQFACAEAAwABA/AEAQPgBAEAQAgBAIAIAQEzAAECBsACQ/+cHSABowAcIsf/n+ecFSQhoASKQQwhgACABsHBHwEZAwABAAMAAQIGwAJAAIAGwcEfARoOwAZD/5xpIAGjABwix/+f55xhJCGhAIhBDCGABmBZJCGAWSRZICGAWSSIgCGAWSQEgCGC/82+P/+cNSABowAcIsf/n+ecLSABoAJBoRgB4QAYAKAbV/+cAmAZJCGABIAKQAuAAIAKQ/+cCmAOwcEdAwABAAMAAQATAAEAIwABAA6pVAAzAAEAQwABAgLWIsAaQBZEEkgAgA5AEmAIoA9P/5wEgB5Ah4ASYGLn/5wAgB5Ab4P/nA5gFmYhCE9L/5waYA5mJAEBYApACmP/3mP8BkAGYGLH/5wGYB5AG4AOYQBwDkOfnACAHkP/nB5gIsIC9wEaFsAOQApEBkgOoAHiABxix/+cBIASQieACmMAcAyGIQwKQ/+dDSABowAcIsf/n+edBSQhoQCIQQwhg/+cCmAAocdD/5z1JACAIYD1JLyAIYDxJASAIYL/zb4//5zVIAGjABwix/+f55zNIAGgAkGhGAHhABgAoBtX/5wCYLkkIYAEgBJBS4AOYLEkIYAGYAGgtSQhgKkknIAhgKkkBIAhgv/Nvj//nI0gAaMAHCLH/5/nnIUgAaACQaEYAeEAGACgG1f/nAJgcSQhgASAEkC3gA5gaSQhgGkkhIAhgGUkBIAhgv/Nvj//nEkgAaMAHCLH/5/nnEEgAaACQaEYAeEAGACgG1f/nAJgLSQhgASAEkAzgA5gAHQOQAZgAHQGQApgAHwKQiucAIASQ/+cEmAWwcEfARkDAAEAAwABABMAAQAzAAEAQwABACMAAQIWwA5ACkQGSA6gAeIAHGLH/5wOYBJBI4AKYwBwDIYhDApD/5yJIAGjABwix/+f55yBJCGhAIhBDCGAfSQAgCGD/5wKYcLP/5wOYHEkIYBxJASAIYL/zb4//5xVIAGjABwix/+f55xNIAGgAkGhGAHhABgAoBNX/5wCYDkkIYBHgEEgAaAGZCWiIQgHQ/+cJ4AOYAB0DkAGYAB0BkAKYAB8CkM7nA5gEkP/nBJgFsHBHQMAAQADAAEAMwABABMAAQBDAAEAIwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0xf9
+  pc_program_page: 0x225
+  pc_erase_sector: 0x125
+  pc_verify: 0x371
+  data_section_offset: 0x438
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf100000
+      end: 0xf102000
+    page_size: 0x80
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: m2u51_ap_256
+  description: M2U51 APROM 256kB
+  default: true
+  instructions: FUhZIQFgFiEBYIghAWAAaAEoH9ERSAFtyQYG1AFoBCIKQwJgAW3JBvzVAWkBKQHQASEBYQAhAWJBaAgiCkNCYAdIaSEBYAFoKSAIQCk4QR6IQXBHASBwRwABAEAAAgBAAMAAQANJCGzAB/zRACAIYHBHwEYAwABAsLUMSxxs5Af80RxoQCUlQx1gWWCaYNhgASAYYb/zb48ZbMkH/NEZaEoGAdQAILC9GWCwvQDAAEACSQFAIiAAIv/33r8A/v//8LWDsBVGASIBLRbYApIFsQtNTxwAIQGRIiZ/HgzQBB0BaAhIAUAwRipG//fF/wAoIEby0AKaAOABmhBGA7DwvQOqVQAA/v//8LWDBwHQASEj4MwcEksZbMkH/NEZaEAlDUMdYCEh2WADIYxDACWMsQEhWGAWaJ5gGWG/82+PHmz2B/zRHmh3BgbUJB8SHQAdACzu0SlGAOAeYAhG8L3ARgDAAEBwtYMHANBwvcscEkkMbOQH/NEMaEAlJUMNYAAkzGADJKND8NABJEhgDGG/82+PDWztB/zRDWhuBgnUjWgWaLVC4dEbHxIdAB0AK+zR2+cNYHC9wEYAwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x65
+  pc_program_page: 0x109
+  pc_erase_sector: 0xb1
+  pc_verify: 0x165
+  data_section_offset: 0x1bc
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: m2u51_ld_4
+  description: M2U51 LDROM 4kB
+  default: true
+  instructions: FUhZIQFgFiEBYIghAWAAaAEoH9ERSAFtyQYG1AFoBCIKQwJgAW3JBvzVAWkBKQHQASEBYQAhAWJBaAgiCkNCYAdIaSEBYAFoKSAIQCk4QR6IQXBHASBwRwABAEAAAgBAAMAAQANJCGzAB/zRACAIYHBHwEYAwABAsLUMSxxs5Af80RxoQCUlQx1gWWCaYNhgASAYYb/zb48ZbMkH/NEZaEoGAdQAILC9GWCwvQDAAEACSQFAIiAAIv/33r8A/v//8LWDsBVGASIBLRbYApIFsQtNTxwAIQGRIiZ/HgzQBB0BaAhIAUAwRipG//fF/wAoIEby0AKaAOABmhBGA7DwvQOqVQAA/v//8LWDBwHQASEj4MwcEksZbMkH/NEZaEAlDUMdYCEh2WADIYxDACWMsQEhWGAWaJ5gGWG/82+PHmz2B/zRHmh3BgbUJB8SHQAdACzu0SlGAOAeYAhG8L3ARgDAAEBwtYMHANBwvcscEkkMbOQH/NEMaEAlJUMNYAAkzGADJKND8NABJEhgDGG/82+PDWztB/zRDWhuBgnUjWgWaLVC4dEbHxIdAB0AK+zR2+cNYHC9wEYAwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x65
+  pc_program_page: 0x109
+  pc_erase_sector: 0xb1
+  pc_verify: 0x165
+  data_section_offset: 0x1bc
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0xf100000
+      end: 0xf101000
+    page_size: 0x200
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x200
+      address: 0x0
+- name: mr63_ap_512
+  description: MR63 512kB Flash AP
+  default: true
+  instructions: sLWHsBNGDEYFRgWQBJEDkgKTAZQAlf/nH0gAaAEhCEIB0P/n+OcdSAFoQCIRQwFgBZgbSQhgBJgaSQhgA5gAKAXR/+cAIMBDF0kIYAPgFkgWSQFg/+cWSAEhAWC/82+P/+cNSABoASEIQgHQ/+f45wpIAGhAIQhCCND/5wdIAWhAIhFDAWABIAaQAuAAIAaQ/+cGmAewsL3AwABAAMAAQAzAAEAEwABACMAAQAOqVQAQwABAsLWHsBNGDEYFRgWQBJEDkh1IWSEBYBYhAWCIIQFgAGgBIQhCApMBlACVA9H/5wEgBpAm4BVIAWgEIhFDAWAUSAFoEUMBYP/nEkgAaBAhCEIB0f/n+OcQSAFoASIRQwFgDkkKYABoEEID0f/nASAGkAfgCUgBaEAiEUMBYAAgBpD/5waYB7CwvQABAEAAAgBABAIAQFACAEAAwABAHMAAQIKwAUYBkACR/+cJSABoASEIQgHQ/+f45wZIAWgBIpFDAWAFSAAhAWAIRgKwcEfARsDAAEAAwABAHMAAQIC1grAmIAAhAZEBmv/3MP8CsIC9gLWEsAFGA5ADmAEiEweYQwOQA5gOSxhAA5ADmA8jGwUYQFIFkEIBkQfR/+cDmAlJQBgDkAEgApAC4AAgApD/5wOZApoiIP/3Cf8EsIC9wEYA+P//AADg/4C1hrAKRgNGBJADkQAgApABkgCT/+cCmAOZiEIP0v/nBJgCmUocApKJAEBY//e8/wAoA9D/5wEgBZAD4OvnACAFkP/nBZgGsIC9wEawtYewE0YMRgVGBZAEkQOSBJjAHAMhiEMEkAWYASEJB4hDBZACkwGUAJX/5yJIAGgBIQhCAdD/5/jnIEgBaEAiEUMBYB5IISEBYP/nBJgAKCzQ/+cFmBtJCGADmABoGkkIYBpIASEBYL/zb4//5xJIAGgBIQhCAdD/5/jnD0gAaEAhCEII0P/nDEgBaEAiEUMBYAEgBpAM4AWYAB0FkAOYAB0DkASYAB8EkM/nACAGkP/nBpgHsLC9wMAAQADAAEAMwABABMAAQAjAAEAQwABAsLWHsBNGDEYFRgaQBZEEkgWYwBwDIYhDBZAGmAEhCQcIQAOQBpiIQwaQApMBlACV/+cjSABoASEIQgHQ/+f45yBIAWhAIhFDAWAfSAAhAWD/5wWYACgu0P/nBpgbSQhgG0gBIQFgv/Nvj//nFEgAaAEhCEIB0P/n+OcSSABoQCEIQgbQ/+cPSAFoQCIRQwFgEeAQSABoBJkJaIhCAdD/5wngBpgAHQaQBJgAHQSQBZgAHwWQzecGmAOZCEMHsLC9wMAAQADAAEAMwABABMAAQBDAAEAIwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0xb5
+  pc_uninit: 0x155
+  pc_program_page: 0x249
+  pc_erase_sector: 0x1a5
+  pc_erase_all: 0x191
+  pc_verify: 0x319
+  data_section_offset: 0x3f0
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x80000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: mr63_ld_4
+  description: MR63 4kB Flash LD
+  default: true
+  instructions: sLWHsBNGDEYFRgWQBJEDkgKTAZQAlf/nH0gAaAEhCEIB0P/n+OcdSAFoQCIRQwFgBZgbSQhgBJgaSQhgA5gAKAXR/+cAIMBDF0kIYAPgFkgWSQFg/+cWSAEhAWC/82+P/+cNSABoASEIQgHQ/+f45wpIAGhAIQhCCND/5wdIAWhAIhFDAWABIAaQAuAAIAaQ/+cGmAewsL3AwABAAMAAQAzAAEAEwABACMAAQAOqVQAQwABAsLWHsBNGDEYFRgWQBJEDkh1IWSEBYBYhAWCIIQFgAGgBIQhCApMBlACVA9H/5wEgBpAm4BVIAWgEIhFDAWAUSAFoEUMBYP/nEkgAaBAhCEIB0f/n+OcQSAFoASIRQwFgDkkKYABoEEID0f/nASAGkAfgCUgBaEAiEUMBYAAgBpD/5waYB7CwvQABAEAAAgBABAIAQFACAEAAwABAHMAAQIKwAUYBkACR/+cJSABoASEIQgHQ/+f45wZIAWgBIpFDAWAFSAAhAWAIRgKwcEfARsDAAEAAwABAHMAAQIC1grAmIAAhAZEBmv/3MP8CsIC9gLWEsAFGA5ADmAEiEweYQwOQA5gOSxhAA5ADmA8jGwUYQFIFkEIBkQfR/+cDmAlJQBgDkAEgApAC4AAgApD/5wOZApoiIP/3Cf8EsIC9wEYA+P//AADg/4C1hrAKRgNGBJADkQAgApABkgCT/+cCmAOZiEIP0v/nBJgCmUocApKJAEBY//e8/wAoA9D/5wEgBZAD4OvnACAFkP/nBZgGsIC9wEawtYewE0YMRgVGBZAEkQOSBJjAHAMhiEMEkAWYASEJB4hDBZACkwGUAJX/5yJIAGgBIQhCAdD/5/jnIEgBaEAiEUMBYB5IISEBYP/nBJgAKCzQ/+cFmBtJCGADmABoGkkIYBpIASEBYL/zb4//5xJIAGgBIQhCAdD/5/jnD0gAaEAhCEII0P/nDEgBaEAiEUMBYAEgBpAM4AWYAB0FkAOYAB0DkASYAB8EkM/nACAGkP/nBpgHsLC9wMAAQADAAEAMwABABMAAQAjAAEAQwABAsLWHsBNGDEYFRgaQBZEEkgWYwBwDIYhDBZAGmAEhCQcIQAOQBpiIQwaQApMBlACV/+cjSABoASEIQgHQ/+f45yBIAWhAIhFDAWAfSAAhAWD/5wWYACgu0P/nBpgbSQhgG0gBIQFgv/Nvj//nFEgAaAEhCEIB0P/n+OcSSABoQCEIQgbQ/+cPSAFoQCIRQwFgEeAQSABoBJkJaIhCAdD/5wngBpgAHQaQBJgAHQSQBZgAHwWQzecGmAOZCEMHsLC9wMAAQADAAEAMwABABMAAQBDAAEAIwABAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0xb5
+  pc_uninit: 0x155
+  pc_program_page: 0x249
+  pc_erase_sector: 0x1a5
+  pc_erase_all: 0x191
+  pc_verify: 0x319
+  data_section_offset: 0x3f0
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 50
+    erase_sector_timeout: 180
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: nuc1263_ap_64
+  description: NUC1263 64kB Flash AP
+  default: true
+  instructions: AbUAvwCYQR4AkQAo+tEIvfC1BEYNRhZGZCEAIgAjWSDmTzhgFiA4YIggOGA4RgBowAfADwAoAdEBIPC94EgAaAQnOEPeTzhgOEZAaAQnOEPbT3hgAL8IRkkeACj70dlIAGgtJzhD1084YDhGwGkBJzhD1E/4YThGAGjAB8APACgB0QEg2efPSABoQCc4Q81POGAAINHnAUYAv8pIAGnAB8APACj50cdIAGgtIpBDxUoQYBBGwGlACEAA0GEAIHBHAUYAv79IAGnAB8APACj50bxIAGhAIhBDukoQYCIg0GCICIAAUGABIEAFgUIH0AkggASBQgPQBSDABIFCAtGySLBKkGABIK9KEGG/82CPAL+sSABpwAfADwAo+dGpSABoQCIQQAAoBtCmSABoEEOlShBgASBwRwAg/OdwtQNGDEYAJQngKUZtHIkAWFj/97j/Bh4B0DBGcL2lQvPTACD653C1BEYLRhVGACIpRhhGDzADCRsBAL+TSABpwAfADwAo+dGQSABoQCYwQ45OMGAgCQABcGAnIPBgEEZSHIAACFiIToA2MGAQRlIcgAAIWHBgEEZSHIAACFiwYBBGUhyAAAhY8GABIH9OMGEQOyjgAL98SMAwAGgwJjBAACj40RBGUhyAAAhYd06ANjBgEEZSHIAACFhwYAC/ckjAMABowCYwQAAo+NEQRlIcgAAIWG1OgDawYBBGUhyAAAhY8GAQOwAr1NEAv2dIAGnAB8APACj50XC9ELUDRsgcgQiJAAC/YEgAacAHwA8AKPnRXUgAaEAkIENbTCBgIuAhIFlM4GCYCIAAYGAQaKBgASAgYb/zYI8Av1NIAGnAB8APACj50VBIAGhAJCBAACgG0E1IAGggQ0xMIGABIBC9Gx0SHQkfACna0QAg9+f+tQVGDEYWRgAgAZAAkAC/QkgAacAHwA8AKPnRP0gAaEAhCEM9SQhg4ByECKQAL+DosgAoC9H/LAnZ/ycBNwGYMhg5RihG//c3/wCQFuDosgAoC9EQLAnTJwk/AQGYMhg5RihG//co/wCQB+AnRgGYMhg5RihG//eJ/wCQ7RkBmMAZAZDkGwCYACgB0AEg/r0ALM3RACD65xC1yxyZCIkAAL8eSxtp2wfbDwAr+dEbSxtoQCQjQxlMI2An4AAjF0zjYIMImwBjYAAjo2ABIyNhv/NgjwC/EUsbadsH2w8AK/nRDksbaEAkI0AAKwXQC0sbaCNDCUwjYBC9CEubaBRoo0IA0PjnAB0SHQkfACnV0QC/8ecAAQBQAAIAUADAAFADqlUAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x11
+  pc_uninit: 0x97
+  pc_program_page: 0x2a9
+  pc_erase_sector: 0xc1
+  pc_verify: 0x341
+  data_section_offset: 0x3cc
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x10000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: nuc1263_ld_4
+  description: NUC1263 4kB Flash LD
+  default: true
+  instructions: AbUAvwCYQR4AkQAo+tEIvfC1BEYNRhZGZCEAIgAjWSDsTzhgFiA4YIggOGA4RgBowAfADwAoAdEBIPC95kgAaAQnOEPkTzhgOEZAaAQnOEPhT3hgAL8IRkkeACj70d9IAGgtJzhD3U84YDhGwGkBJzhD2k/4YThGAGjAB8APACgB0QEg2efVSABoICc4QAAoAdEBINHn0UgAaEAnOEPPTzhgACDJ5wFGAL/MSABpwAfADwAo+dHJSABoLSKQQ8dKEGAQRsBpQAhAANBhACBwRwNGASBwRwFGAL/ASABpwAfADwAo+dG9SABoQCIQQ7tKEGAiINBgiAiAAFBgASBABYFCB9AJIIAEgUID0AUgwASBQgLRskixSpBgASCvShBhv/NgjwC/rUgAacAHwA8AKPnRqkgAaEAiEEAAKAbQp0gAaBBDpUoQYAEgcEcAIPzncLUDRgxGACUJ4ClGbRyJAFhY//e4/wYeAdAwRnC9pULz0wAg+udwtQRGC0YVRgAiKUYYRg8wAwkbAQC/k0gAacAHwA8AKPnRkEgAaEAmMEOOTjBgIAkAAXBgJyDwYBBGUhyAAAhYiU6ANjBgEEZSHIAACFhwYBBGUhyAAAhYsGAQRlIcgAAIWPBgASB/TjBhEDso4AC/fUjAMABoMCYwQAAo+NEQRlIcgAAIWHdOgDYwYBBGUhyAAAhYcGAAv3NIwDAAaMAmMEAAKPjREEZSHIAACFhtToA2sGAQRlIcgAAIWPBgEDsAK9TRAL9nSABpwAfADwAo+dFwvRC1A0bIHIEIiQAAv2FIAGnAB8APACj50V5IAGhAJCBDXEwgYCLgISBaTOBgmAiAAGBgEGigYAEgIGG/82CPAL9USABpwAfADwAo+dFRSABoQCQgQAAoBtBOSABoIENMTCBgASAQvRsdEh0JHwAp2tEAIPfn/rUFRgxGFkYAIAGQAJAAv0NIAGnAB8APACj50UBIAGhAIQhDPkkIYOAchAikAC/g6LIAKAvR/ywJ2f8nATcBmDIYOUYoRv/3N/8AkBbg6LIAKAvRECwJ0ycJPwEBmDIYOUYoRv/3KP8AkAfgJ0YBmDIYOUYoRv/3if8AkO0ZAZjAGQGQ5BsAmAAoAdABIP69ACzN0QAg+ucQtcscmQiJAAC/HksbadsH2w8AK/nRG0sbaEAkI0MZTCNgJ+AAIxdM42CDCJsAY2AAI6NgASMjYb/zYI8AvxFLG2nbB9sPACv50Q5LG2hAJCNAACsF0AtLG2gjQwpMI2AQvQhLm2gUaKNCAND45wAdEh0JHwAp1dEAv/HnAAAAAQBQAAIAUADAAFADqlUAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x11
+  pc_uninit: 0xa7
+  pc_program_page: 0x2bf
+  pc_erase_sector: 0xd7
+  pc_verify: 0x357
+  pc_blank_check: 0xd1
+  data_section_offset: 0x3e4
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: nuc1263_sp_2
+  description: NUC1263 2kB Flash SP
+  default: true
+  instructions: AbUAvwCYQR4AkQAo+tEIvfC1BEYNRhZGZCEAIgAjWSCXTzhgFiA4YIggOGA4RgBowAfADwHRASDwvZJIAGgEJzhDkE84YDhGQGgEJzhDjU94YAC/CEZJHgAo+9GKSABoLSc4Q4hPOGA4RgBowAfADwHRASDg54RIAGhAJzhDgk84YAAg2OcBRgC/f0gAacAHwA/60XxIAGgtIpBDekoQYAAgcEcBRgC/d0gAacAHwA/60XVIAGhAIhBDc0oQYCIg0GCICIAAUGABIEAFgUIH0AkggASBQgPQBSDABIFCAtFqSGlKkGABIGdKEGG/82CPAL9lSABpwAfAD/rRYkgAaEAiEEIG0GBIAGgQQ15KEGABIHBHACD853C1A0YMRgAlCeApRm0ciQBYWP/3u/8GAAHQMEZwvaVC89MAIPrnELUDRsgcgQiJAAC/T0gAacAHwA/60UxIAGhAJCBDSkwgYCDgISBITOBgmAiAAGBgEGigYAEgIGG/82CPAL9CSABpwAfAD/rRQEgAaEAkIEIG0D1IAGggQzxMIGABIBC9Gx0SHQkfACnc0QAg9+f+tQZGDEYXRgAgAZAAkAC/MkgAacAHwA/60TBIAGhAIQhDLkkIYOAchAikABLgJUYBmDoYKUYwRv/3q/8AkCxGNhkBmAAZAZAsGwCYACgB0AEg/r0ALOrRACD65xC1yxyZCIkAAL8dSxtp2wfbD/rRGksbaEAkI0MYTCNgJeAAIxZM42CDCJsAY2AAI6NgASMjYb/zYI8AvxBLG2nbB9sP+tEOSxtoQCQjQgXQC0sbaCNDCkwjYBC9CEubaBRoo0IA0PjnAB0SHQkfACnX0QC/8ecAAAABAFAAAgBQAMAAUAOqVQAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x11
+  pc_uninit: 0x87
+  pc_program_page: 0x1ad
+  pc_erase_sector: 0xa5
+  pc_verify: 0x209
+  data_section_offset: 0x290
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x200000
+      end: 0x200800
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 3000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: nuc126_ap_128
+  description: NUC126 128kB Flash AP
+  default: true
+  instructions: MLUDRgxGZCFZINpNKGAWIChgiCAoYChGAGjAB8APAdEBIDC91EgAaAQlKEPSTShgKEZAaAQlKEPPTWhgAL8IRkkeACj70c1IAGgtJShDy00oYChGwGkBJShDyE3oYShGAGjAB8APAdEBINrnw0gAaEAlKEPBTShgACDS5wFGAL++SABpwAfAD/rRvEgAaC0ikEO6ShBgEEbAaUAIQADQYQAgcEcBRgC/tEgAacAHwA/60bJIAGhAIhBDsEoQYCIg0GCICIAAUGABIEAFgUIB0atIkGABIKlKEGG/82CPAL+mSABpwAfAD/rRpEgAaEAiEEIG0KFIAGgQQ6BKEGABIHBHACD853C1A0YMRgAlCeApRm0ciQBYWP/3xP8GAAHQMEZwvaVC89MAIPrncLUERgtGFUYAIilGGEYPMAMJGwEAv45IAGnAB8AP+tGLSABoQCYwQ4lOMGAgCQABcGAnIPBgEEZSHIAACFiEToA2MGAQRlIcgAAIWHBgEEZSHIAACFiwYBBGUhyAAAhY8GABIHpOMGEQOybgAL94SMAwAGgwJjBC+dEQRlIcgAAIWHNOgDYwYBBGUhyAAAhYcGAAv25IwDAAaMAmMEL50RBGUhyAAAhYaU6ANrBgEEZSHIAACFjwYBA7ACvW0QC/Y0gAacAHwA/60XC9ELUDRsgcgQiJAAC/XUgAacAHwA/60VtIAGhAJCBDWUwgYCDgISBXTOBgmAiAAGBgEGigYAEgIGG/82CPAL9RSABpwAfAD/rRTkgAaEAkIEIG0ExIAGggQ0pMIGABIBC9Gx0SHQkfACnc0QAg9+f+tQVGDEYWRgAgAZAAkAC/QUgAacAHwA/60T5IAGhAIQhDPEkIYOAchAikAC/gKAYADgvR/ywJ2f8nATcBmDIYOUYoRv/3P/8AkBbgKAYADgvRECwJ0ycJPwEBmDIYOUYoRv/3MP8AkAfgJ0YBmDIYOUYoRv/3jf8AkO0ZAZjAGQGQ5BsAmAAoAdABIP69ACzN0QAg+ucQtcscmQiJAAC/HUsbadsH2w/60RpLG2hAJCNDGEwjYCXgACMWTONggwibAGNgACOjYAEjI2G/82CPAL8QSxtp2wfbD/rRDksbaEAkI0IF0AtLG2gjQwpMI2AQvQhLm2gUaKNCAND45wAdEh0JHwAp19EAv/HnAAAAAQBQAAIAUADAAFADqlUAAAAAAA==
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x7d
+  pc_program_page: 0x267
+  pc_erase_sector: 0xa5
+  pc_verify: 0x2fd
+  data_section_offset: 0x384
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x20000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+- name: nuc126_ld_4
+  description: NUC126 4kB Flash LD
+  default: true
+  instructions: MLUDRgxGZCFZIN9NKGAWIChgiCAoYChGAGjAB8APAdEBIDC92UgAaAQlKEPXTShgKEZAaAQlKEPUTWhgAL8IRkkeACj70dJIAGgtJShD0E0oYChGwGkBJShDzU3oYShGAGjAB8APAdEBINrnyEgAaCAlKEIB0QEg0+fFSABoQCUoQ8NNKGAAIMvnAUYAv8BIAGnAB8AP+tG9SABoLSKQQ7tKEGAQRsBpQAhAANBhACBwRwNGASBwRwFGAL+0SABpwAfAD/rRskgAaEAiEEOwShBgIiDQYIgIgABQYAEgQAWBQgHRq0iQYAEgqUoQYb/zYI8Av6ZIAGnAB8AP+tGkSABoQCIQQgbQoUgAaBBDoEoQYAEgcEcAIPzncLUDRgxGACUJ4ClGbRyJAFhY//fE/wYAAdAwRnC9pULz0wAg+udwtQRGC0YVRgAiKUYYRg8wAwkbAQC/jkgAacAHwA/60YtIAGhAJjBDiU4wYCAJAAFwYCcg8GAQRlIcgAAIWIROgDYwYBBGUhyAAAhYcGAQRlIcgAAIWLBgEEZSHIAACFjwYAEgek4wYRA7JuAAv3hIwDAAaDAmMEL50RBGUhyAAAhYc06ANjBgEEZSHIAACFhwYAC/bkjAMABowCYwQvnREEZSHIAACFhpToA2sGAQRlIcgAAIWPBgEDsAK9bRAL9jSABpwAfAD/rRcL0QtQNGyByBCIkAAL9dSABpwAfAD/rRW0gAaEAkIENZTCBgIOAhIFdM4GCYCIAAYGAQaKBgASAgYb/zYI8Av1FIAGnAB8AP+tFOSABoQCQgQgbQTEgAaCBDSkwgYAEgEL0bHRIdCR8AKdzRACD35/61BUYMRhZGACABkACQAL9BSABpwAfAD/rRPkgAaEAhCEM8SQhg4ByECKQAL+AoBgAOC9H/LAnZ/ycBNwGYMhg5RihG//c//wCQFuAoBgAOC9EQLAnTJwk/AQGYMhg5RihG//cw/wCQB+AnRgGYMhg5RihG//eN/wCQ7RkBmMAZAZDkGwCYACgB0AEg/r0ALM3RACD65xC1yxyZCIkAAL8dSxtp2wfbD/rRGksbaEAkI0MYTCNgJeAAIxZM42CDCJsAY2AAI6NgASMjYb/zYI8AvxBLG2nbB9sP+tEOSxtoQCQjQgXQC0sbaCNDCkwjYBC9CEubaBRoo0IA0PjnAB0SHQkfACnX0QC/8ecAAAABAFAAAgBQAMAAUAOqVQAAAAAA
+  load_address: 0x20000008
+  pc_init: 0x1
+  pc_uninit: 0x8b
+  pc_program_page: 0x27b
+  pc_erase_sector: 0xb9
+  pc_verify: 0x311
+  pc_blank_check: 0xb3
+  data_section_offset: 0x398
+  rtt_poll_interval: 0
+  flash_properties:
+    address_range:
+      start: 0x100000
+      end: 0x101000
+    page_size: 0x800
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x800
+      address: 0x0
+

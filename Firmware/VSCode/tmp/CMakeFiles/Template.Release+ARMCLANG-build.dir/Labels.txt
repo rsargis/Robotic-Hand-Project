@@ -1,0 +1,11 @@
+# Target labels
+ Template.Release+ARMCLANG
+# Source files and their labels
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-build
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-build.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-build.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-patch.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-update.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-download.rule
+C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-mkdir.rule
