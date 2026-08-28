@@ -36,6 +36,7 @@ void motion_init(const uint8_t servo_ids[NUM_DOF]) {
         scs_set_limits(0xFE, SERVO_MIN_POS, SERVO_MAX_POS);
         scs_set_torque(0xFE, true);
         scs_set_position(0xFE, POSE_NEUTRAL.angle[0]); // Move all servos to neutral
+        scs_clear_speed(0xFE);
 
         current_pose = POSE_NEUTRAL;
 }
@@ -53,7 +54,7 @@ void motion_set_pose(const hand_pose_t *pose) {
         targets[i].time = max_time;
     }
 
-    scs_sync_write_position_time(&targets, NUM_DOF);
+    scs_sync_write_position_time(targets, NUM_DOF);
 
     current_pose = *pose;
 }

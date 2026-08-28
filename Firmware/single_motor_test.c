@@ -1,13 +1,8 @@
-/*main for calibrating individual motors*/
-
 /*Test for single motor movement*/
 
 #include <stdio.h>
 #include "scs0009_servo_driver.h"
 #include "NuMicro.h"
-
-//ID to assign
-#define ID 2
 
 void SYS_Init(void)
 {
@@ -124,35 +119,46 @@ int main(void)
 
     scs_init(servo_uart_tx, servo_uart_rx);
 
-    printf("\n=== Servo Calibration ===\n");
+    printf("\n=== Testing SCS0009 Servo Movement ===\n");
 
-    // Assign ID
-    scs_set_id(0xFE, ID);
+    // Assign ID 1
+    scs_set_id(0xFE, 1);
     delay_ms(100);
 
     // Set non-zero position limits to force Servo/Positional Mode
-    scs_set_limits(ID, 255, 767);
+    scs_set_limits(1, 100, 900);
     delay_ms(100);
-    debug_dump_registers(ID);
+    debug_dump_registers(1);
 
     // Enable torque
-    scs_set_torque(ID, true);
+    scs_set_torque(1, true);
     delay_ms(100);
-    debug_dump_registers(ID);
+    debug_dump_registers(1);
 
-    scs_clear_speed(ID);
+    scs_clear_speed(1);
 
-    printf("Moving to 511\n");
-    scs_set_position_time(ID, 511, 1000);
-    delay_ms(2000);
+    while (1) {
+        printf("Moving to 100\n");
+        scs_set_position_time(1, 100, 1000);
+        delay_ms(2000);
 
-    SCS_Status_t status;
-    int status_res = scs_get_status(ID, &status);
-    if (status_res == SCS_OK) {
-        printf("  -> present position: %u\n", status.position);
-    } else {
-        printf("  -> status read failed (error code: %d)\n", status_res);
+        SCS_Status_t status;
+        int status_res = scs_get_status(1, &status);
+        if (status_res == SCS_OK) {
+            printf("  -> present position: %u\n", status.position);
+        } else {
+            printf("  -> status read failed (error code: %d)\n", status_res);
+        }
+
+        printf("Moving to 200\n");
+        scs_set_position_time(1, 900, 1000);
+        delay_ms(2000);
+
+        status_res = scs_get_status(1, &status);
+        if (status_res == SCS_OK) {
+            printf("  -> present position: %u\n", status.position);
+        } else {
+            printf("  -> status read failed (error code: %d)\n", status_res);
+        }
     }
-
-    while (1);
 }

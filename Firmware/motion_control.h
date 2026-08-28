@@ -9,8 +9,8 @@
 
 #define NUM_DOF 8
 
-#define SERVO_MIN_POS  100
-#define SERVO_MAX_POS  900
+#define SERVO_MIN_POS  255
+#define SERVO_MAX_POS  767
 
 typedef struct {
     int16_t angle[NUM_DOF];
