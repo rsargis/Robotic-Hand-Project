@@ -1,6 +1,6 @@
 CompileFlags:
   CompilationDatabase: >-
-    c:\Users\rsarg\Downloads\M251BSP\SampleCode\RoboticHandProject\VSCode\out\Template\ARMCLANG\Release
+    c:\Users\rsarg\OneDrive\Desktop\Robotic-Hand-Project\Firmware\VSCode\out\Template\ARMCLANG\Release
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'
@@ -403,12 +403,12 @@ CompileFlags:
     - '-D__thumb__=1'
     - '-D__ARMCOMPILER_LIBCXX=1'
     - >-
-      -IC:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/../../../Library/CMSIS/Core/Include
+      -IC:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/../Library/CMSIS/Core/Include
     - >-
-      -IC:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/../../../Library/StdDriver/inc
+      -IC:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/../Library/StdDriver/inc
     - >-
-      -IC:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/../../../Library/Device/Nuvoton/M251/Include
+      -IC:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/../Library/Device/Nuvoton/M251/Include
     - >-
-      -IC:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG
+      -IC:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG
     - >-
       -IC:/Users/rsarg/AppData/Local/arm/packs/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include

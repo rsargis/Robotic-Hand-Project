@@ -2,8 +2,8 @@
 
 # group CMSIS
 add_library(Group_CMSIS OBJECT
-  "${SOLUTION_ROOT}/../../../Library/Device/Nuvoton/M251/Source/system_M251.c"
-  "${SOLUTION_ROOT}/../../../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c"
+  "${SOLUTION_ROOT}/../Library/Device/Nuvoton/M251/Source/system_M251.c"
+  "${SOLUTION_ROOT}/../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c"
 )
 target_include_directories(Group_CMSIS PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
@@ -24,12 +24,14 @@ target_link_libraries(Group_CMSIS PUBLIC
 
 # group Library
 add_library(Group_Library OBJECT
-  "${SOLUTION_ROOT}/../../../Library/StdDriver/src/retarget.c"
-  "${SOLUTION_ROOT}/../../../Library/StdDriver/src/uart.c"
-  "${SOLUTION_ROOT}/../../../Library/StdDriver/src/sys.c"
-  "${SOLUTION_ROOT}/../../../Library/StdDriver/src/clk.c"
-  "${SOLUTION_ROOT}/../../../Library/StdDriver/src/gpio.c"
+  "${SOLUTION_ROOT}/../Library/StdDriver/src/retarget.c"
+  "${SOLUTION_ROOT}/../Library/StdDriver/src/uart.c"
+  "${SOLUTION_ROOT}/../Library/StdDriver/src/sys.c"
+  "${SOLUTION_ROOT}/../Library/StdDriver/src/clk.c"
+  "${SOLUTION_ROOT}/../Library/StdDriver/src/gpio.c"
   "${SOLUTION_ROOT}/../scs0009_servo_driver.c"
+  "${SOLUTION_ROOT}/../motion_control.c"
+  "${SOLUTION_ROOT}/../command_interface.c"
 )
 target_include_directories(Group_Library PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

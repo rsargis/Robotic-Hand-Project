@@ -62,7 +62,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\rsarg\AppData\Roaming\SPB_Data\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.31.12\bin\cmake.exe --regenerate-during-build -SC:\Users\rsarg\Downloads\M251BSP\SampleCode\RoboticHandProject\VSCode\tmp\Template.Release+ARMCLANG -BC:\Users\rsarg\Downloads\M251BSP\SampleCode\RoboticHandProject\VSCode\tmp\1
+  command = C:\Users\rsarg\AppData\Roaming\SPB_Data\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.31.12\bin\cmake.exe --regenerate-during-build -SC:\Users\rsarg\OneDrive\Desktop\Robotic-Hand-Project\Firmware\VSCode\tmp\Template.Release+ARMCLANG -BC:\Users\rsarg\OneDrive\Desktop\Robotic-Hand-Project\Firmware\VSCode\tmp\1
   description = Re-running CMake...
   generator = 1
 

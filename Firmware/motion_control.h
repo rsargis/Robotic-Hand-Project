@@ -19,8 +19,12 @@ typedef struct {
 extern const hand_pose_t POSE_OPEN_HAND;
 extern const hand_pose_t POSE_CLOSED_HAND;
 extern const hand_pose_t POSE_NEUTRAL;
+extern const hand_pose_t POSE_MIDDLE;
+extern const hand_pose_t POSE_OK;
+extern const hand_pose_t POSE_VICTORY;
 
-
+uint16_t clamp_position(uint16_t pos);
+void clamp_pose(hand_pose_t *input);
 void motion_init(const uint8_t servo_ids[NUM_DOF]);
 void motion_set_pose(const hand_pose_t *pose);
 void motion_interpolate(const hand_pose_t *from,

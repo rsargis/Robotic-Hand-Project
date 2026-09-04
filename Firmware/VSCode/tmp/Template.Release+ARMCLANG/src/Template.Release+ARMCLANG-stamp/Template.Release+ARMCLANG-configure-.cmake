@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-set(command "C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.12/bin/cmake.exe;-G;Ninja;-S;C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG;-B;C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/1;-DSOLUTION_ROOT=C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode;-DCMSIS_PACK_ROOT=C:/Users/rsarg/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.14.1/etc")
+set(command "C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.12/bin/cmake.exe;-G;Ninja;-S;C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG;-B;C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/1;-DSOLUTION_ROOT=C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode;-DCMSIS_PACK_ROOT=C:/Users/rsarg/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.14.1/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
-set(stdout_log "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-out.log")
-set(stderr_log "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-err.log")
+set(stdout_log "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-out.log")
+set(stderr_log "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-*.log")
+    set(msg "${msg}\nSee also\n  C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
-    set(msg "Template.Release+ARMCLANG configure command succeeded.  See also C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-*.log")
+    set(msg "Template.Release+ARMCLANG configure command succeeded.  See also C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

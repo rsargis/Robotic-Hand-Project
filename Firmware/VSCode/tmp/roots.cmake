@@ -3,5 +3,5 @@ set(CMSIS_PACK_ROOT "C:/Users/rsarg/AppData/Local/arm/packs" CACHE PATH "CMSIS p
 cmake_path(ABSOLUTE_PATH CMSIS_PACK_ROOT NORMALIZE OUTPUT_VARIABLE CMSIS_PACK_ROOT)
 set(CMSIS_COMPILER_ROOT "C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.14.1/etc" CACHE PATH "CMSIS compiler root")
 cmake_path(ABSOLUTE_PATH CMSIS_COMPILER_ROOT NORMALIZE OUTPUT_VARIABLE CMSIS_COMPILER_ROOT)
-set(SOLUTION_ROOT "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode" CACHE PATH "CMSIS solution root")
+set(SOLUTION_ROOT "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode" CACHE PATH "CMSIS solution root")
 cmake_path(ABSOLUTE_PATH SOLUTION_ROOT NORMALIZE OUTPUT_VARIABLE SOLUTION_ROOT)

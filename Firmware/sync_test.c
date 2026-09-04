@@ -1,4 +1,4 @@
-/*Test for sync motor movement*/
+/*Test for sync motor movement (single finger)*/
 
 #include <stdio.h>
 #include "scs0009_servo_driver.h"
@@ -121,50 +121,70 @@ int main(void)
 
     printf("\n=== Testing SCS0009 Sync Servo Movement ===\n");
 
+    int ID1 = 7;
+    int ID2 = 8;
+
     SCS_SyncTarget_t targets0[2];
     SCS_SyncTarget_t targets1[2];
+    SCS_SyncTarget_t targets2[2];
 
-    targets0[0].id = 1;
+    targets0[0].id = ID1;
     targets0[0].position = 255;
     targets0[0].time = 500;
 
-    targets0[1].id = 2;
+    targets0[1].id = ID2;
     targets0[1].position = 767;
     targets0[1].time = 500;
 
-    targets1[0].id = 1;
+    targets1[0].id = ID1;
     targets1[0].position = 767;
     targets1[0].time = 500;
 
-    targets1[1].id = 2;
+    targets1[1].id = ID2;
     targets1[1].position = 255;
     targets1[1].time = 500;
 
+    targets2[0].id = ID1;
+    targets2[0].position = 511;
+    targets2[0].time = 500;
+
+    targets2[1].id = ID2;
+    targets2[1].position = 511;
+    targets2[1].time = 500;
+
     // Set non-zero position limits to force Servo/Positional Mode
-    scs_set_limits(1, 255, 767);
+    scs_set_limits(ID1, 255, 767);
     delay_ms(100);
-    debug_dump_registers(1);
+    debug_dump_registers(ID1);
 
     // Enable torque
-    scs_set_torque(1, true);
+    scs_set_torque(ID1, true);
     delay_ms(100);
-    debug_dump_registers(1);
+    debug_dump_registers(ID1);
 
      // Enable torque
-    scs_set_torque(2, true);
+    scs_set_torque(ID2, true);
     delay_ms(100);
-    debug_dump_registers(2);
+    debug_dump_registers(ID2);
 
-    scs_clear_speed(1);
-    scs_clear_speed(2);
+    scs_clear_speed(ID1);
+    scs_clear_speed(ID2);
 
-    while (1) {
+    int count = 0;
+    while (1){
         printf("Moving to first position\n");
         scs_sync_write_position_time(targets0, 2);
         delay_ms(1000);
-
         printf("Moving to second position\n");
         scs_sync_write_position_time(targets1, 2);
         delay_ms(1000);
+        printf("Moving to third position\n");
+        scs_sync_write_position_time(targets2, 2);
+        delay_ms(1000);
+        count++;
+        if (count >= 5){
+            printf("Reset to neutral position\n");
+            break;
+        }
     }
 }

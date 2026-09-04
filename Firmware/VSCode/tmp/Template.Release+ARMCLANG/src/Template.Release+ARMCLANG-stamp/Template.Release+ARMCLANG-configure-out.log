@@ -4,6 +4,6 @@
 -- Check for working C compiler: c:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.24.0/bin/armclang.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Configuring done (3.7s)
+-- Configuring done (7.0s)
 -- Generating done (0.1s)
--- Build files have been written to: C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/1
+-- Build files have been written to: C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/1

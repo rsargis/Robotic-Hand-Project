@@ -14,7 +14,7 @@ set(CMAKE_COMPILE_COMMANDS ${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json)
 set(COMPILE_COMMANDS ${OUT_DIR}/compile_commands.json)
 set(COMPILE_MACROS ${OUT_DIR}/compile_macros.h)
 set(BIN_FILE "Template.bin")
-set(LD_SCRIPT "${SOLUTION_ROOT}/../../../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf")
+set(LD_SCRIPT "${SOLUTION_ROOT}/../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf")
 set(LD_SCRIPT_PP ${LD_SCRIPT})
 
 # Processor Options
@@ -50,9 +50,9 @@ add_library(${CONTEXT}_GLOBAL INTERFACE)
 # Includes
 target_include_directories(${CONTEXT} PUBLIC
   $<$<COMPILE_LANGUAGE:C,CXX>:
-    "${SOLUTION_ROOT}/../../../Library/CMSIS/Core/Include"
-    "${SOLUTION_ROOT}/../../../Library/StdDriver/inc"
-    "${SOLUTION_ROOT}/../../../Library/Device/Nuvoton/M251/Include"
+    "${SOLUTION_ROOT}/../Library/CMSIS/Core/Include"
+    "${SOLUTION_ROOT}/../Library/StdDriver/inc"
+    "${SOLUTION_ROOT}/../Library/Device/Nuvoton/M251/Include"
   >
   "${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include"
 )

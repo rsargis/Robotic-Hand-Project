@@ -3,20 +3,29 @@
 #include <stdlib.h>
 #include <math.h>
 
-const hand_pose_t POSE_OPEN_HAND = { .angle = {200, 200, 200, 200, 200, 200, 200, 200} };
-const hand_pose_t POSE_CLOSED_HAND = { .angle = {800, 800, 800, 800, 800, 800, 800, 800} };
+const hand_pose_t POSE_OPEN_HAND = { .angle =  {767, 255, 767, 255, 767, 255, 767, 255}};
+const hand_pose_t POSE_CLOSED_HAND = { .angle = {255, 767, 255, 767, 255, 767, 255, 767} };
 const hand_pose_t POSE_NEUTRAL = { .angle = {511, 511, 511, 511, 511, 511, 511, 511} };
+const hand_pose_t POSE_MIDDLE = { .angle = {255, 767, 767, 255, 255, 767, 255, 767} };
+const hand_pose_t POSE_OK = { .angle = {255, 767, 767, 255, 767, 255, 255, 767} };
+const hand_pose_t POSE_VICTORY = { .angle = {600, 300, 700, 400, 255, 767, 255, 767} };
 
 hand_pose_t current_pose;
 
-static uint16_t clamp_position(uint16_t pos) {
+uint16_t clamp_position(uint16_t pos) {
     if (pos < SERVO_MIN_POS) return SERVO_MIN_POS;
     if (pos > SERVO_MAX_POS) return SERVO_MAX_POS;
     return pos;
 }
 
-static uint32_t calculate_duration(const hand_pose_t *start, const hand_pose_t *target, uint32_t speed_deg_per_sec) {
-    if (speed_deg_per_sec == 0) return 0;
+void clamp_pose(hand_pose_t *input) {
+    for (size_t i = 0; i < NUM_DOF; i++) {
+        input->angle[i] = clamp_position(input->angle[i]);
+    }
+}
+
+static uint32_t calculate_duration(const hand_pose_t *start, const hand_pose_t *target, float speed_factor) {
+    if (speed_factor == 0) return 0;
 
     uint16_t max_delta = 0;
     for (size_t i = 0; i < NUM_DOF; i++) {
@@ -25,11 +34,10 @@ static uint32_t calculate_duration(const hand_pose_t *start, const hand_pose_t *
             max_delta = diff;
         }
     }
-
+    //max speed should be 100 ticks in 100ms
     // Convert raw position units to duration in milliseconds based on speed
     // (Assuming ~0.29 degrees per raw tick for 0-1023 scale over ~300 deg range)
-    uint32_t duration_ms = (max_delta * 1000) / speed_deg_per_sec;
-    return (duration_ms < 50) ? 50 : duration_ms; // Minimum 50ms guard
+    return (max_delta < 50) ? 50 : max_delta*speed_factor; // Minimum 50ms guard
 }
 
 void motion_init(const uint8_t servo_ids[NUM_DOF]) {
@@ -46,12 +54,12 @@ void motion_set_pose(const hand_pose_t *pose) {
 
     const hand_pose_t curr = current_pose;
 
-    uint32_t max_time = calculate_duration(&curr, pose, 150);
+    uint32_t max_time = calculate_duration(&curr, pose, 1);
 
-    for (int i = 0; i < NUM_DOF; i++){
-        targets[i].id = i;
-        targets[i].position = pose->angle[i];
-        targets[i].time = max_time;
+    for (int i = 1; i <= NUM_DOF; i++){
+        targets[i-1].id = i;
+        targets[i-1].position = pose->angle[i-1];
+        targets[i-1].time = max_time;
     }
 
     scs_sync_write_position_time(targets, NUM_DOF);

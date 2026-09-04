@@ -1,13 +1,12 @@
-/*main for calibrating individual motors*/
-
-/*Test for single motor movement*/
+/*Full hand Motion Controller test*/
 
 #include <stdio.h>
 #include "scs0009_servo_driver.h"
 #include "NuMicro.h"
+#include "command_interface.h"
 
 //ID to assign
-#define ID 2
+#define ID 8
 
 void SYS_Init(void)
 {
@@ -124,35 +123,10 @@ int main(void)
 
     scs_init(servo_uart_tx, servo_uart_rx);
 
-    printf("\n=== Servo Calibration ===\n");
+    printf("\n=== Write Your Command ===\n");
+    motion_init((const uint8_t[NUM_DOF]){1, 2, 3, 4, 5, 6, 7, 8});
 
-    // Assign ID
-    scs_set_id(0xFE, ID);
-    delay_ms(100);
-
-    // Set non-zero position limits to force Servo/Positional Mode
-    scs_set_limits(ID, 255, 767);
-    delay_ms(100);
-    debug_dump_registers(ID);
-
-    // Enable torque
-    scs_set_torque(ID, true);
-    delay_ms(100);
-    debug_dump_registers(ID);
-
-    scs_clear_speed(ID);
-
-    printf("Moving to 511\n");
-    scs_set_position_time(ID, 511, 1000);
-    delay_ms(2000);
-
-    SCS_Status_t status;
-    int status_res = scs_get_status(ID, &status);
-    if (status_res == SCS_OK) {
-        printf("  -> present position: %u\n", status.position);
-    } else {
-        printf("  -> status read failed (error code: %d)\n", status_res);
+    while(1){
+        read_line();
     }
-
-    while (1);
 }

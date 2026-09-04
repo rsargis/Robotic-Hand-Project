@@ -26,9 +26,9 @@ build:
       - --library_type=microlib --map --load_addr_map_info --symbols
       - --info sizes --info totals --strict --summary_stderr --info summarysizes
   add-path:
-    - ../../../../../../../Library/CMSIS/Core/Include
-    - ../../../../../../../Library/StdDriver/inc
-    - ../../../../../../../Library/Device/Nuvoton/M251/Include
+    - ../../../../../Library/CMSIS/Core/Include
+    - ../../../../../Library/StdDriver/inc
+    - ../../../../../Library/Device/Nuvoton/M251/Include
     - ${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include
   add-path-asm:
     - ${CMSIS_PACK_ROOT}/Nuvoton/NuMicroM23_DFP/1.0.6/Device/M251/Include
@@ -46,27 +46,31 @@ build:
     - type: comp-db
       file: compile_macros.h
   linker:
-    script: ../../../../../../../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf
+    script: ../../../../../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf
   groups:
     - group: CMSIS
       files:
-        - file: ../../../../../../../Library/Device/Nuvoton/M251/Source/system_M251.c
+        - file: ../../../../../Library/Device/Nuvoton/M251/Source/system_M251.c
           category: sourceC
-        - file: ../../../../../../../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c
+        - file: ../../../../../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c
           category: sourceC
     - group: Library
       files:
-        - file: ../../../../../../../Library/StdDriver/src/retarget.c
+        - file: ../../../../../Library/StdDriver/src/retarget.c
           category: sourceC
-        - file: ../../../../../../../Library/StdDriver/src/uart.c
+        - file: ../../../../../Library/StdDriver/src/uart.c
           category: sourceC
-        - file: ../../../../../../../Library/StdDriver/src/sys.c
+        - file: ../../../../../Library/StdDriver/src/sys.c
           category: sourceC
-        - file: ../../../../../../../Library/StdDriver/src/clk.c
+        - file: ../../../../../Library/StdDriver/src/clk.c
           category: sourceC
-        - file: ../../../../../../../Library/StdDriver/src/gpio.c
+        - file: ../../../../../Library/StdDriver/src/gpio.c
           category: sourceC
         - file: ../../../../../scs0009_servo_driver.c
+          category: sourceC
+        - file: ../../../../../motion_control.c
+          category: sourceC
+        - file: ../../../../../command_interface.c
           category: sourceC
     - group: User
       files:

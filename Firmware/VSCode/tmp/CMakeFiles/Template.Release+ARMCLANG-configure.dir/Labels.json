@@ -2,25 +2,25 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-configure"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-configure"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-configure.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/CMakeFiles/Template.Release+ARMCLANG-configure.rule"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-configure.rule"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-patch.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-patch.rule"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-update.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-update.rule"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-download.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-download.rule"
 		},
 		{
-			"file" : "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-mkdir.rule"
+			"file" : "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-mkdir.rule"
 		}
 	],
 	"target" : 

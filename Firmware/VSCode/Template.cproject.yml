@@ -7,9 +7,9 @@ project:
         type: bin
     - setup: Options for Template
       add-path:
-        - ../../../Library/CMSIS/Core/Include
-        - ../../../Library/StdDriver/inc
-        - ../../../Library/Device/Nuvoton/M251/Include
+        - ../Library/CMSIS/Core/Include
+        - ../Library/StdDriver/inc
+        - ../Library/Device/Nuvoton/M251/Include
       misc:
         - for-compiler: AC6
           C:
@@ -32,28 +32,30 @@ project:
           C-CPP:
             - -Wmaybe-uninitialized
   linker:
-    - script: ../../../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf
+    - script: ../Library/Device/Nuvoton/M251/Source/ARM/APROM.scf
       for-compiler: AC6
-    - script: ../../../Library/Device/Nuvoton/M251/Source/GCC/gcc_arm.ld
+    - script: ../Library/Device/Nuvoton/M251/Source/GCC/gcc_arm.ld
       for-compiler: GCC
   groups:
     - group: CMSIS
       files:
-        - file: ../../../Library/Device/Nuvoton/M251/Source/system_M251.c
-        - file: ../../../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c
+        - file: ../Library/Device/Nuvoton/M251/Source/system_M251.c
+        - file: ../Library/Device/Nuvoton/M251/Source/ARM/startup_M251.c
           for-compiler: AC6
-        - file: ../../../Library/Device/Nuvoton/M251/Source/GCC/startup_M251.S
+        - file: ../Library/Device/Nuvoton/M251/Source/GCC/startup_M251.S
           for-compiler: GCC
-        - file: ../../../Library/Device/Nuvoton/M251/Source/GCC/_syscalls.c
+        - file: ../Library/Device/Nuvoton/M251/Source/GCC/_syscalls.c
           for-compiler: GCC
     - group: Library
       files:
-        - file: ../../../Library/StdDriver/src/retarget.c
-        - file: ../../../Library/StdDriver/src/uart.c
-        - file: ../../../Library/StdDriver/src/sys.c
-        - file: ../../../Library/StdDriver/src/clk.c
-        - file: ../../../Library/StdDriver/src/gpio.c
-        - file: ../../../SampleCode/RoboticHandProject/scs0009_servo_driver.c
+        - file: ../Library/StdDriver/src/retarget.c
+        - file: ../Library/StdDriver/src/uart.c
+        - file: ../Library/StdDriver/src/sys.c
+        - file: ../Library/StdDriver/src/clk.c
+        - file: ../Library/StdDriver/src/gpio.c
+        - file: ../scs0009_servo_driver.c
+        - file : ../motion_control.c
+        - file: ../command_interface.c
     - group: User
       files:
         - file: ../main.c

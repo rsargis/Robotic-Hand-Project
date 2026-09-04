@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-set(command "C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.12/bin/cmake.exe;--build;C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/1;--target;database")
+set(command "C:/Users/rsarg/AppData/Roaming/SPB_Data/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.12/bin/cmake.exe;--build;C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/1;--target;database")
 set(log_merged "")
 set(log_output_on_failure "ON")
-set(stdout_log "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-out.log")
-set(stderr_log "C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-err.log")
+set(stdout_log "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-out.log")
+set(stderr_log "C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-*.log")
+    set(msg "${msg}\nSee also\n  C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
-    set(msg "Template.Release+ARMCLANG database command succeeded.  See also C:/Users/rsarg/Downloads/M251BSP/SampleCode/RoboticHandProject/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-*.log")
+    set(msg "Template.Release+ARMCLANG database command succeeded.  See also C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/tmp/Template.Release+ARMCLANG/src/Template.Release+ARMCLANG-stamp/Template.Release+ARMCLANG-database-*.log")
     message(STATUS "${msg}")
   endif()
 endif()
