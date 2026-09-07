@@ -11,6 +11,7 @@ const hand_pose_t POSE_OK = { .angle = {255, 767, 767, 255, 767, 255, 255, 767} 
 const hand_pose_t POSE_VICTORY = { .angle = {600, 300, 700, 400, 255, 767, 255, 767} };
 
 hand_pose_t current_pose;
+float speed;
 
 uint16_t clamp_position(uint16_t pos) {
     if (pos < SERVO_MIN_POS) return SERVO_MIN_POS;
@@ -45,6 +46,7 @@ void motion_init(const uint8_t servo_ids[NUM_DOF]) {
         scs_set_torque(0xFE, true);
         scs_set_position(0xFE, POSE_NEUTRAL.angle[0]); // Move all servos to neutral
         scs_clear_speed(0xFE);
+        speed = 1;
 
         current_pose = POSE_NEUTRAL;
 }
@@ -54,7 +56,7 @@ void motion_set_pose(const hand_pose_t *pose) {
 
     const hand_pose_t curr = current_pose;
 
-    uint32_t max_time = calculate_duration(&curr, pose, 1);
+    uint32_t max_time = calculate_duration(&curr, pose, speed);
 
     for (int i = 1; i <= NUM_DOF; i++){
         targets[i-1].id = i;
@@ -65,4 +67,12 @@ void motion_set_pose(const hand_pose_t *pose) {
     scs_sync_write_position_time(targets, NUM_DOF);
 
     current_pose = *pose;
+}
+
+void update_speed(float new_speed) {
+    if (new_speed < 0.5) {
+        speed = 0.5; // Minimum speed factor
+    } else {
+        speed = new_speed;
+    }
 }

@@ -57,3 +57,9 @@
 127	354	8102625377366330	C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/out/Template/ARMCLANG/Release/Template.axf	90a8d5de47f2d6e9
 3	118	8102625923108924	CMakeFiles/Group_Library.dir/C_/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/motion_control.o	d8a40ef9310b4eb7
 119	353	8102625924266654	C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/out/Template/ARMCLANG/Release/Template.axf	90a8d5de47f2d6e9
+16	1528	8102816858365568	CMakeFiles/Group_Library.dir/C_/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/command_interface.o	36b04798e1dae231
+26	1566	8102816858470721	CMakeFiles/Group_User.dir/C_/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/main.o	99094e8902f9b28
+4	1914	8102816858255003	CMakeFiles/Group_Library.dir/C_/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/motion_control.o	d8a40ef9310b4eb7
+1915	2650	8102816877355737	C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/out/Template/ARMCLANG/Release/Template.axf	90a8d5de47f2d6e9
+4	130	8104253648754756	CMakeFiles/Group_Library.dir/C_/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/motion_control.o	d8a40ef9310b4eb7
+132	1012	8104253650020174	C:/Users/rsarg/OneDrive/Desktop/Robotic-Hand-Project/Firmware/VSCode/out/Template/ARMCLANG/Release/Template.axf	90a8d5de47f2d6e9

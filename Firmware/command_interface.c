@@ -82,11 +82,23 @@ void command_parser(char* line){
             printf("ERROR, INVALID POSE COMMAND\n");
         }
     }
+    else if (strncmp("SPEED", line, 5) == 0){
+        float new_speed;
+        if (sscanf(line, "SPEED %f", &new_speed) == 1){
+            if (new_speed < 25.0f) {
+                new_speed = 25.0f; // Minimum speed factor
+            }
+            else if (new_speed > 200.0f) {
+                new_speed = 200.0f; // Maximum speed factor
+            }   
+            update_speed(1/(new_speed/100.0f)); // Convert percentage to speed factor
+        }
+    }
     else if(strcmp("HELP", line) == 0){
-        printf("Valid commands: OPEN, CLOSE, NEUTRAL, MIDDLE, OK, VICTORY, STATUS <id>, POSE <angle0> ... <angle7>\n");
+        printf("Valid commands: OPEN, CLOSE, NEUTRAL, MIDDLE, OK, VICTORY, STATUS <id>, SPEED <percentage>, POSE <angle0> ... <angle7>\n");
     }
     else{
         printf("ERROR, INVALID COMMAND\n");
-        printf("Valid commands: OPEN, CLOSE, NEUTRAL, MIDDLE, OK, VICTORY, STATUS <id>, POSE <angle0> ... <angle7>\n");
+        printf("Valid commands: OPEN, CLOSE, NEUTRAL, MIDDLE, OK, VICTORY, STATUS <id>, SPEED <percentage>, POSE <angle0> ... <angle7>\n");
     }
 }

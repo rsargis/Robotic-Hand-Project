@@ -30,5 +30,6 @@ void motion_set_pose(const hand_pose_t *pose);
 void motion_interpolate(const hand_pose_t *from,
                         const hand_pose_t *to,
                         uint16_t duration_ms);
+void update_speed(float speed);
 
 #endif
